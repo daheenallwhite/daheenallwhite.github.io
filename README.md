@@ -57,3 +57,14 @@
 
 8. about.md 수정
 
+&nbsp;
+
+&nbsp;
+
+### To Do Later
+
+- GitHub badges
+  - [shields.io](https://github.com/badges/shields)
+- draft 사용해보기
+- Tag 
+- category
