@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Debuggin with Xcode and LLDB"
+title:  "Debugging with Xcode and LLDB"
 date:   2019-04-22 15:45:59
 author: Dana Lee
 categories: Swift
