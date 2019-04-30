@@ -57,6 +57,11 @@
 
 8. about.md 수정
 
+9. Logo image custom - favicon
+
+   - [favicon 생성 사이트](https://www.favicon-generator.org/)
+   - [참조](https://webdir.tistory.com/337)
+
 &nbsp;
 
 &nbsp;
