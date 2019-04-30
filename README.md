@@ -18,7 +18,7 @@
 
 2. jekyll admin plugin
 
-   -  [참조]([http://labs.brandi.co.kr/2018/05/14/chunbs.html](http://labs.brandi.co.kr/2018/05/14/chunbs.html))
+   -  [참조](http://labs.brandi.co.kr/2018/05/14/chunbs.html)
 
 3. Emoji & css - layout.scss 에서 수정함
 
