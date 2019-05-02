@@ -128,13 +128,15 @@ cover:  "/assets/instacode.png"
 
   - 구현하는 type은 이 protocol을 **준수한다 (conformed)**
 
-    {% highlight swift %} struct Assistant: Viseoable { //Viseoable 프로토콜을 채택했다
-    		func manageSchedule() { ...뫄뫄구현} //이 프로토콜을 준수한다.
-    		func brewCoffee() { }
-    		func drive() { } 
+    {% highlight swift %} 
     
-    ​		var degree: String 
-    ​		var diverLicense: String
+    struct Assistant: Viseoable { //Viseoable 프로토콜을 채택했다
+    	func manageSchedule() { ...뫄뫄구현} //이 프로토콜을 준수한다.
+    	func brewCoffee() { }
+    	func drive() { } 
+    
+    ​	var degree: String 
+    ​	var diverLicense: String
     }{% endhighlight %}
 
 &nbsp;
@@ -145,13 +147,15 @@ cover:  "/assets/instacode.png"
 
 - 프로토콜을 세분화 할 수 있다
 
-  {% highlight swift %} protocol Drivable {
-    	var driverLicense: String
-    	func drive()
-    }
+  {% highlight swift %} 
+  
+  protocol Drivable {
+    var driverLicense: String
+    func drive()
+   }
   
   protocol Brewable {
-    	func brewCoffee()
+    func brewCoffee()
   }
   
   struct Sajang {
@@ -293,7 +297,9 @@ protocol + extension = protocol extention
 
 
 
-{% highlight swift %} protocol LayoutDrawable {
+{% highlight swift %} 
+
+protocol LayoutDrawable {
   func drawSomeLayout()
 }
 
@@ -311,11 +317,15 @@ Protocol Default Implimentation
 
 
 
-{% highlight swift %} protocol LayoutDrawable {
+{% highlight swift %} 
+
+protocol LayoutDrawable {
   func drawSomeLayout()
 }
 
 class MyView:UIView, LayoutDrawable {
+
+​	//….
 
 }
 
