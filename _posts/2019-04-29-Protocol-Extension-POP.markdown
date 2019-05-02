@@ -9,7 +9,7 @@ cover:  "/assets/instacode.png"
 ---
 ### :pushpin: Table Of Contents
 
-- Protocol
+- [Protocol](#Protocol)
   - 프로토콜을 사용하는 이유
   - 프로토콜 상속(X) / 채택, 준수(O)
   - 프로토콜 여러 개 사용하기
@@ -17,7 +17,6 @@ cover:  "/assets/instacode.png"
   - 상속 vs Extension
     - class 상속의 한계
 - POP (Protocol Oriented Programming)
-- 
 
 &nbsp;
 
@@ -41,43 +40,43 @@ cover:  "/assets/instacode.png"
   - 지원자는 해당 능력 가지고 있다고 써있는 이력서 가지고 옴
 
   ```swift
-  protocol Viseoable {  // 비서가 될 수 있는 사람은 이런 조건을 가져야 한다.
-  		func manageSchedule()
-  		func brewCoffee()
-  		func drive()
-  		var degree: String { get } //학위를 접근해서 확인해야 하니까
-  	  var diverLicense: String { get }
-  }
   
-  struct Sajang {
-  		var viseo: Viseoable //이 protocol(자격) 가진 사람은 모두 여기 들어올 수 있다.
+  protocol Viseoable {  // 비서가 될 수 있는 사람은 이런 조건을 가져야 한다.
+  	func manageSchedule()
+  	func brewCoffee()
+  	func drive()
+  	var degree: String { get } //학위를 접근해서 확인해야 하니까
+    var diverLicense: String { get }
   }
   
   struct Secretary: Viseoable {
-  		func manageSchedule() { ...구현}
-  		func brewCoffee() { }
-  		func drive() { } 
+  	func manageSchedule() { ...구현}
+  	func brewCoffee() { }
+  	func drive() { } 
   
-  		var degree: String 
-  		var diverLicense: String 
+  	var degree: String 
+  	var diverLicense: String 
   }
-  
-  let sec1: Secretary = Secretary(degree: "뫄뫄대", driverLicens: "2종 보통")
   
   struct Assistant: Viseoable {
-  		func manageSchedule() { ...뫄뫄구현}
-  		func brewCoffee() { }
-  		func drive() { } 
+  	func manageSchedule() { ...뫄뫄구현}
+  	func brewCoffee() { }
+  	func drive() { } 
   
-     	var degree: String 
-      var diverLicense: String
+    var degree: String 
+    var diverLicense: String
   }
   
-  let sec2 = Assistant(degree: "뭐뭐대", driverLicens: "1종 보통")
+  struct Sajang {
+  	var viseo: Viseoable //이 protocol(자격) 가진 사람은 모두 여기 들어올 수 있다.
+  }
+  
+  
+  let sec1: Secretary = Secretary(degree: "뫄뫄대", driverLicens: "2종 보통")
+  let sec2: Assistant = Assistant(degree: "뭐뭐대", driverLicens: "1종 보통")
   
   var master: Sajang = Sajang(viseo: sec1) // sec1은 비서 할 수 있다
-  master.viseo = sec2
-  
+  master.viseo = sec2 //sec2도 가능
   
   ```
 
@@ -115,7 +114,7 @@ cover:  "/assets/instacode.png"
 
 - **Any type**을 쓰면 안에서 원하는 타입인지 확인하는 과정이 필요
 
-  ➤ 프로토콜 사용시 그 과정 스킵 가능
+  → 프로토콜 사용시 그 과정 스킵 가능
 
 - function을 사용하는 모든 타입(class, struct, enum)이 protocol 채택 가능
 
@@ -129,16 +128,14 @@ cover:  "/assets/instacode.png"
 
   - 구현하는 type은 이 protocol을 **준수한다 (conformed)**
 
-    ```swift
-    struct Assistant: Viseoable { //Viseoable 프로토콜을 채택했다
+    {% highlight swift %} struct Assistant: Viseoable { //Viseoable 프로토콜을 채택했다
     		func manageSchedule() { ...뫄뫄구현} //이 프로토콜을 준수한다.
     		func brewCoffee() { }
     		func drive() { } 
     
-    		var degree: String 
-    		var diverLicense: String
-    }
-    ```
+    ​		var degree: String 
+    ​		var diverLicense: String
+    }{% endhighlight %}
 
 &nbsp;
 
@@ -148,20 +145,18 @@ cover:  "/assets/instacode.png"
 
 - 프로토콜을 세분화 할 수 있다
 
-  ```swift
-  protocol Drivable {
-    		var driverLicense: String
-    		func drive()
+  {% highlight swift %} protocol Drivable {
+    	var driverLicense: String
+    	func drive()
     }
   
-    protocol Brewable {
-    		func brewCoffee()
-    }
+  protocol Brewable {
+    	func brewCoffee()
+  }
   
-    struct Sajang {
-    		var viseo: Drivable&Brewable // protocol끼리 조합시엔 & 사용
-    }
-  ```
+  struct Sajang {
+    var viseo: Drivable&Brewable // protocol끼리 조합시엔 & 사용
+  }{% endhighlight %}
 
 &nbsp;
 
@@ -177,6 +172,8 @@ cover:  "/assets/instacode.png"
 &nbsp;
 
 &nbsp;
+
+---
 
 # Extension
 
@@ -200,33 +197,29 @@ cover:  "/assets/instacode.png"
       func convertDouble() -> Double {
         return Double(self)
       }
-    }
-
-    {% endhighlight %}
+    }{% endhighlight %}
 
   - Flot -> Double 로 변환하는 메서드 구현하기
 
     {% highlight swift %}
 
     extension Float {
-      func convertDouble() -> Double {
+    func convertDouble() -> Double {
         return Double(self)
       }
-    }
-
-    {% endhighlight %}
-
+    }{% endhighlight %}
+  
   - int 홀짝을 bool로 반환하는 extension method 구현
 
     {% highlight swift %}
 
     extension Int {
-      func isEven() -> Bool {
+    func isEven() -> Bool {
         return self % 2 == 0
-      }
     }
+    }{% endhighlight %}
 
-    {% endhighlight %}
+&nbsp;
 
 &nbsp;
 
@@ -239,21 +232,19 @@ cover:  "/assets/instacode.png"
 
 - Extension : 기존 자료형 그대로 거기에 기능을 붙여줌 (**수평적 확장**)
   ex) human 클래스에 기능을 덧붙이는 것
-
-
-
-```swift
-extension SomeType {
-  // new functionality to be added to SomeType
-}
-
-extension String {
-  var length: Int {
-    let string:NSString = NSString(String: self)
-    return string.length
+  
+  {% highlight swift %}
+  
+  extension SomeType {
+    // new functionality to be added to SomeType
   }
-}
-```
+  
+  extension String {
+    var length: Int {
+      let string:NSString = NSString(String: self)
+      return string.length
+    }
+  }{% endhighlight %}
 
 &nbsp;
 
@@ -269,7 +260,8 @@ extension String {
 
 - 기능별 코드 블럭 단위별로 extension 사용해서 정의함 → 가독성 향상
 
-  ```swift
+  {% highlight swift %}
+  
   struct MyPoint {
     var ...
   }
@@ -277,12 +269,13 @@ extension String {
   // MARK :- 
   extension MyPoint {
     //특정 기능
-  }
-  ```
+  }{% endhighlight %}
 
 &nbsp;
 
 &nbsp;
+
+---
 
 # Protocol Oriented Programming
 
@@ -300,10 +293,7 @@ protocol + extension = protocol extention
 
 
 
-
-
-```swift
-protocol LayoutDrawable {
+{% highlight swift %} protocol LayoutDrawable {
   func drawSomeLayout()
 }
 
@@ -311,8 +301,7 @@ class MyView: UIView, LayoutDrawable {
   func drawSomeLayout() {
     ...
   }
-}
-```
+}{% endhighlight %}
 
 
 
@@ -322,21 +311,19 @@ Protocol Default Implimentation
 
 
 
-```swift
-protocol LayoutDrawable {
+{% highlight swift %} protocol LayoutDrawable {
   func drawSomeLayout()
 }
 
 class MyView:UIView, LayoutDrawable {
-  
+
 }
 
 extension LayoutDrawable { // Protocol Default Implementation
   func drawSomeLayout() {
     // draw some layout...
   }
-}
-```
+}{% endhighlight %}
 
 
 
@@ -350,15 +337,17 @@ swift - struct friendly language => 상속 불가 -> protocol
 
 
 
-참조
+### 참조
 
-protocol oriented programming in swift (wwdc 15, 408)
+[protocol oriented programming in swift (wwdc 15, 408)](https://developer.apple.com/videos/play/wwdc2015/408/)
 
 [swift에서 프로토콜 중심 프로그래밍 하기](<https://academy.realm.io/kr/posts/protocol-oriented-programming-in-swift/>)
 
+&nbsp;
 
+&nbsp;
 
-
+---
 
 ## extension can do ~
 
