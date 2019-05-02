@@ -80,7 +80,11 @@ cover:  "/assets/instacode.png"
   
   ```
 
-  &nbsp;
+  
+
+  
+
+  <script src="https://gist.github.com/daheenallwhite/0803179adc7119219af30ccc4c2d4bb5.js"></script>
 
 - 프로토콜 네이밍:  주로 ***~를 할 수 있다*** 는 의미로 많이 지음
 
@@ -128,16 +132,18 @@ cover:  "/assets/instacode.png"
 
   - 구현하는 type은 이 protocol을 **준수한다 (conformed)**
 
-    {% highlight swift %} 
-    
+    ```swift
     struct Assistant: Viseoable { //Viseoable 프로토콜을 채택했다
     	func manageSchedule() { ...뫄뫄구현} //이 프로토콜을 준수한다.
     	func brewCoffee() { }
     	func drive() { } 
     
-    ​	var degree: String 
-    ​	var diverLicense: String
-    }{% endhighlight %}
+    	var degree: String 
+    	var diverLicense: String
+    }
+    ```
+    
+    
 
 &nbsp;
 
@@ -147,8 +153,7 @@ cover:  "/assets/instacode.png"
 
 - 프로토콜을 세분화 할 수 있다
 
-  {% highlight swift %} 
-  
+  ```swift
   protocol Drivable {
     var driverLicense: String
     func drive()
@@ -160,7 +165,8 @@ cover:  "/assets/instacode.png"
   
   struct Sajang {
     var viseo: Drivable&Brewable // protocol끼리 조합시엔 & 사용
-  }{% endhighlight %}
+  }
+  ```
 
 &nbsp;
 
@@ -193,35 +199,41 @@ cover:  "/assets/instacode.png"
 
 - Example : `extenstion` 사용해서 기존 type에 새로운 method를 추가하기
 
-  - Int → Double 로 변환하는 메서드를 int extension으로 구현하기
+  - `Int` → `Double` 로 변환하는 메서드를 int extension으로 구현하기
 
-    {% highlight swift %}
-
-    extension Int {
+    ```swift
+extension Int {
       func convertDouble() -> Double {
         return Double(self)
       }
-    }{% endhighlight %}
+    }
+    ```
 
-  - Flot -> Double 로 변환하는 메서드 구현하기
+    
 
-    {% highlight swift %}
+  - `Flot` -> `Double` 로 변환하는 메서드 구현하기
 
-    extension Float {
-    func convertDouble() -> Double {
+    ```swift
+extension Float {
+      func convertDouble() -> Double {
         return Double(self)
       }
-    }{% endhighlight %}
-  
-  - int 홀짝을 bool로 반환하는 extension method 구현
-
-    {% highlight swift %}
-
-    extension Int {
-    func isEven() -> Bool {
-        return self % 2 == 0
     }
-    }{% endhighlight %}
+    ```
+
+    
+
+  - `Int` 홀짝을 `Bool`로 반환하는 extension method 구현
+
+    ```swift
+extension Int {
+      func isEven() -> Bool {
+        return self % 2 == 0
+      }
+    }
+    ```
+
+    
 
 &nbsp;
 
@@ -237,8 +249,7 @@ cover:  "/assets/instacode.png"
 - Extension : 기존 자료형 그대로 거기에 기능을 붙여줌 (**수평적 확장**)
   ex) human 클래스에 기능을 덧붙이는 것
   
-  {% highlight swift %}
-  
+  ```swift
   extension SomeType {
     // new functionality to be added to SomeType
   }
@@ -248,7 +259,8 @@ cover:  "/assets/instacode.png"
       let string:NSString = NSString(String: self)
       return string.length
     }
-  }{% endhighlight %}
+  }
+  ```
 
 &nbsp;
 
@@ -264,8 +276,7 @@ cover:  "/assets/instacode.png"
 
 - 기능별 코드 블럭 단위별로 extension 사용해서 정의함 → 가독성 향상
 
-  {% highlight swift %}
-  
+  ```swift
   struct MyPoint {
     var ...
   }
@@ -273,7 +284,8 @@ cover:  "/assets/instacode.png"
   // MARK :- 
   extension MyPoint {
     //특정 기능
-  }{% endhighlight %}
+  }
+  ```
 
 &nbsp;
 
@@ -289,16 +301,17 @@ cover:  "/assets/instacode.png"
 
 구현은 각 타입 내에서 
 
-
+&nbsp;
 
 protocol + extension = protocol extention
 
 - 특정 타입이 할 일 지정 + 구현을 한번에
 
+&nbsp;
 
 
-{% highlight swift %} 
 
+```swift
 protocol LayoutDrawable {
   func drawSomeLayout()
 }
@@ -307,51 +320,41 @@ class MyView: UIView, LayoutDrawable {
   func drawSomeLayout() {
     ...
   }
-}{% endhighlight %}
+}
+```
 
+&nbsp;
 
+- Protocol Default Implimentation: 프로토콜 기능을 미리 구현해 둔다.
+  - 각 프로토콜에서 공통적으로 해야할 일은 protocol default implementation에서 설정해 놓으면 됨
 
-Protocol Default Implimentation
-
-프로토콜 기능을 미리 구현해 둔다.
-
-
-
-{% highlight swift %} 
-
+```swift
 protocol LayoutDrawable {
   func drawSomeLayout()
 }
 
 class MyView:UIView, LayoutDrawable {
-
-​	//….
-
+	//….
 }
 
 extension LayoutDrawable { // Protocol Default Implementation
   func drawSomeLayout() {
     // draw some layout...
   }
-}{% endhighlight %}
+}
+```
 
+&nbsp;
 
+- swift - struct friendly language => 상속 불가 -> protocol
 
-
-
-각 프로토콜에서 공통적으로 해야할 일은 protocol default implementation에서 설정해 놓으면 됨
-
-
-
-swift - struct friendly language => 상속 불가 -> protocol
-
-
+&nbsp;
 
 ### 참조
 
-[protocol oriented programming in swift (wwdc 15, 408)](https://developer.apple.com/videos/play/wwdc2015/408/)
+- [ protocol oriented programming in swift (wwdc 15, 408)](https://developer.apple.com/videos/play/wwdc2015/408/)
 
-[swift에서 프로토콜 중심 프로그래밍 하기](<https://academy.realm.io/kr/posts/protocol-oriented-programming-in-swift/>)
+- [swift에서 프로토콜 중심 프로그래밍 하기](<https://academy.realm.io/kr/posts/protocol-oriented-programming-in-swift/>)
 
 &nbsp;
 
