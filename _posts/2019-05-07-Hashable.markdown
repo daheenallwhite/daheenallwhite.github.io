@@ -40,8 +40,9 @@ struct Set<Element> where Element : Hashable
 - generic type 인데, type 중에 Hashable protocol을 채택한 타입만 사용이 가능하다는 의미
 
 - 위치
-  - _Foundation > Collections > Set_
-
+  
+- _Foundation > Collections > Set_
+  
 - 언제 사용할까? (Array < Set 인 경우) 👍
 
   > You use a set instead of an array when you need to test efficiently for membership and you aren’t concerned with the order of the elements in the collection, or when you need to ensure that each element appears only once in a collection
@@ -173,7 +174,7 @@ struct Hasher
 
 #### Ways to Conform Hashable Protocol
 
-##### 1. 자동으로 따르는 경우
+**1. 자동으로 따르는 경우**
 
 - struct
   - 모든 stored property가 Hashable 준수하는 경우
@@ -181,7 +182,7 @@ struct Hasher
   - With associated value: 해당 value type이 Hashable 준수하는 경우
   - without assiciated value: 선언 없이도 자동으로 Hashable 준수
 
-##### 2. 직접 conformance를 다뤄야 하는 경우
+**2. 직접 conformance를 다뤄야 하는 경우**
 
 - 3가지 경우
   - 1번의 자동 조건을 만족하지 못하는 경우
