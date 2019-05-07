@@ -7,11 +7,11 @@ categories: Swift
 tags:    FactoryPattern Swift 
 cover:  "/assets/instacode.png"
 ---
-# Factory Pattern
+# Factory Pattern :factory:
 
 > The *factory* pattern is a way to encapsulate the implementation details of creating objects, which adheres to a common base class or interface. 
 
-객체 생성을 전담하는 struct/class를 만들어 구체적인 생성과정을 그 안에 구현하는 패턴
+**객체 생성을 전담하는 struct/class를 만들어 구체적인 생성과정을 그 안에 구현하는 패턴**
 
 객체 생성을 다른 struct/class이 전담한다.
 
@@ -34,6 +34,18 @@ cover:  "/assets/instacode.png"
 
   - Factory Method Pattern 
   - Abstract Factory Pattern
+
+&nbsp;
+
+### 📌 Table Of Contents
+
+- Factory Metod Pattern
+- Abstract Factory Pattern
+- 공통점 & 차이점
+- Cf) Design Pattern
+- Factory Pattern in Swift
+
+&nbsp;
 
 &nbsp;
 
@@ -174,6 +186,8 @@ Factory method는 단일 상품 생산
 
 &nbsp;
 
+&nbsp;
+
 ---
 
 ## Abstract Factory Pattern
@@ -187,8 +201,9 @@ Factory method는 단일 상품 생산
 
 - 관련된 객체들을 한꺼번에 캡슐화 하여 팩토리로 만들어서 일관되게 객체를 생성하도록 한다.
 - factory method 여러 개 
-  - 관련된 객체들을 각각 make()(create)
-
+  
+- 관련된 객체들을 각각 make()(create)
+  
 - example
 
   - Product - shoes, tshirt
@@ -303,6 +318,8 @@ Factory method는 단일 상품 생산
 
 &nbsp;
 
+&nbsp;
+
 ## 공통점 & 차이점
 
 ### 공통점
@@ -328,13 +345,21 @@ Factory method는 단일 상품 생산
 
 [참조](https://defacto-standard.tistory.com/42)
 
+:paperclip: **Factory Method Pattern**
+
 ![factory method](https://i.stack.imgur.com/S4QMP.jpg)
+
+&nbsp;
+
+:paperclip: **Abstract Factory Pattern**
 
 ![Abstract Factory](https://i.stack.imgur.com/C2F8L.jpg)
 
 &nbsp;
 
-#### Design Pattern
+&nbsp;
+
+#### :mag: cf) Design Pattern
 
 > Design patterns are blueprints which outline the best practices that create re-usable object oriented code, solving common software problems.
 
@@ -343,6 +368,8 @@ Factory method는 단일 상품 생산
 - Software Design Pattern - 크게 4가지로 구분된다 ([참조](https://en.wikipedia.org/wiki/Software_design_pattern#Creational_patterns))
 - Creational Pattern : Factory Pattern이 소속된 카테고리
   - 객체 생성의 복잡도를 낮추는 모든 것을 다룬다.
+
+&nbsp;
 
 &nbsp;
 
