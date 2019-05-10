@@ -70,7 +70,7 @@ cover:  "/assets/instacode.png"
 
 &nbsp;
 
-### Lazy Store Property
+### Lazy Stored Property
 
 - 처음 사용되기 전까지는 초기 값이 설정되지 않는 property
 
