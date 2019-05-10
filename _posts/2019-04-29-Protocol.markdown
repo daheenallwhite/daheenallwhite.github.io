@@ -1,0 +1,441 @@
+---
+layout: post
+title:  "Protocol in Swift : 자격요건 명시하는 역할"
+date:   2019-04-29 13:19:00
+author: Dana Lee
+categories: Swift
+tags:    Protocol Extension 
+cover:  "/assets/instacode.png"
+---
+### :pushpin: Table Of Contents
+
+**Protocol**
+
+- 프로토콜을 사용하는 이유
+- 프로토콜 상속(X) / 채택, 준수(O) 
+- Protocol Requiremet
+  - Property 명시하기 (Property Requirement)
+  - Method 명시하기 (Method Requirement)
+  - Initializer 명시하기 (Initializer Requirement)
+- Protocol을 type처럼 사용할 수 있다 (Protocol as Type)
+  - Collection element 로 사용하기
+- Protocol 준수하기 - extension 사용 (Adding Protocol Conformance with an Extension)
+- 프로토콜 여러 개 사용하기 (Protocol Composition)
+- Protocol 상속 (Protocol Inheritance)
+- Class-Only Protocol
+- Protocol 준수하는지 확인하기 (Checking for Protocol Conformance)
+- Delegation (역할 위임)
+- Optional Protocol Requirements 
+- Protocol 확장하기 (Protocol Extensions)
+
+&nbsp;
+
+&nbsp;
+
+---
+
+# Protocol 
+
+역할/기능에 대한 자격 요건을 미리 명시해 둔 것
+
+> A *protocol* defines a blueprint of methods, properties, and other **requirements** that **suit a particular task or piece of functionality**. The protocol can then be *adopted* by a class, structure, or enumeration to provide an actual implementation of those requirements. Any type that satisfies the requirements of a protocol is said to *conform* to that protocol.
+
+- 이 역할을 하려면 이런 자격 요건을 가져야 한다 = protocol 에 명시해둔다
+  (suit a particular task)
+
+- **이 type의 instance는 이런 역할을 할 수 있다는 명확한 명세, 조건**
+  
+- struct/class/enum 에서 protocol을 채택할 수 있다.
+  
+  - 채택하는 type에서는 protocol 에서 지정한 자격요건의 구체적인 구현을 제공해야 한다.
+  
+- Syntax 
+
+  ```swift
+  protocol NewProtocol {
+  	var some: String { get set }
+  	var another: Int { get }
+  	func doSomething() -> Bool
+  }
+  ```
+
+  &nbsp;
+
+- _Example_ : 비서 공고에서 자격요건 명시하기
+
+  - 공고에 _'이 일을 하려면 ~이런이런 자격, 능력이 필요하다'_ 라고 명시해둔다
+  - 지원자는 해당 능력 가지고 있다고 써있는 이력서 가지고 지원한다.
+
+  ```swift
+  
+  protocol Viseoable {  // 비서가 될 수 있는 사람은 이런 조건을 가져야 한다.
+  	func manageSchedule()
+  	func brewCoffee()
+  	func drive()
+  	var degree: String { get } //학위를 접근해서 확인해야 하니까
+    var diverLicense: String { get }
+  }
+  
+  struct Secretary: Viseoable {
+  	func manageSchedule() { ...구현}
+  	func brewCoffee() { }
+  	func drive() { } 
+  
+  	var degree: String 
+  	var diverLicense: String 
+  }
+  
+  struct Assistant: Viseoable {
+  	func manageSchedule() { ...뫄뫄구현}
+  	func brewCoffee() { }
+  	func drive() { } 
+  
+    var degree: String 
+    var diverLicense: String
+  }
+  
+  struct Sajang {
+  	var viseo: Viseoable //이 protocol(자격) 가진 사람은 모두 여기 들어올 수 있다.
+  }
+  
+  
+  let sec1: Secretary = Secretary(degree: "뫄뫄대", driverLicens: "2종 보통")
+  let sec2: Assistant = Assistant(degree: "뭐뭐대", driverLicens: "1종 보통")
+  
+  var master: Sajang = Sajang(viseo: sec1) // sec1은 비서 할 수 있다
+  master.viseo = sec2 //sec2도 가능
+  
+  ```
+
+  &nbsp;
+
+- 프로토콜 네이밍:  주로 ***~를 할 수 있다(-able)** 는 의미로 많이 지음 
+
+- 프로토콜에서는 function, property 정의만 넣지 구현은 하지 않음
+
+  - 조건만 명시해 줌
+  - 구현(준수)은 해당 protocol 구현하는 struct, class, enum 에서
+  - property와 extension을 같이 사용하면 protocol level에서 구현도 가능함 (뒤에 나옴)
+
+- 행위 자체의 구체적인 구현은 다를 수 있지만, protocol을 가진다는 것은 자격을 가진다는 것
+
+
+&nbsp;
+
+&nbsp;
+
+---
+
+## protocol 을 사용하는 이유
+
+- **type에 상관 없이 이런 역할, 자격을 가진 instance를 받고 싶을 때!**
+
+- type이 바뀌면 사용할 수 없는 케이스가 생길 수 있음
+
+- protocol(자격)을 가진 instance라면 모두 OK :ok_hand:
+
+- type보다 좀 더 유연한 접근
+
+- 목적에만 부합하면 괜찮은 경우
+
+- 유연성, 확장성을 위해서 
+
+  - cf) 유연성 정도가 더 높은 것은 generic 
+
+- **Any type**을 쓰면 안에서 원하는 타입인지 확인하는 과정이 필요
+
+  → 프로토콜 사용시 그 과정 스킵 가능
+
+- function을 사용하는 모든 타입(class, struct, enum)이 protocol 채택 가능
+
+&nbsp;
+
+&nbsp;
+
+---
+
+## protocol 상속(X) / 채택, 준수(O)
+
+- 타입 정의할 때 **_'protocol을 상속받는다'_ 라고 :exclamation: 절대:exclamation: 쓰지 않는다**
+
+  - 이 protocol은 어떤 type에 의해 **채택되었다 (adopted)**
+- 구현하는 type은 이 protocol을 **준수한다 (conformed)**
+  
+- _Example_
+
+  - struct Assistant 는 protocol Viseoable 을 채택하여 ~이런이런 method, property를 구현함으로써 해당 protocol을 준수한다.
+  
+    ```swift
+    struct Assistant: Viseoable { //Viseoable 프로토콜을 채택했다
+    	func manageSchedule() { ...뫄뫄구현} //이 프로토콜을 준수한다.
+    	func brewCoffee() { }
+    	func drive() { } 
+    
+    	var degree: String 
+    	var diverLicense: String
+    }
+    ```
+    
+
+&nbsp;
+
+&nbsp;
+
+---
+
+## Protocol Requirement
+
+_Protocol 에서 자격요건으로 명시하는 것들_
+
+&nbsp;
+
+### Property
+
+protocol 에서 property 요구조건으로 명시하는 것들
+
+1. property 의 **이름** 과 **type** 
+2. instance / type property 도 명시해줄 수 있다. 
+   - type property : 앞에 `static` 붙임
+3. gettable (read-only) / gettable & settable 인지 명시해준다.
+   - gettable & settable
+     - stored constant property :x:
+     - computed property :x:
+   - gettable로만 명시되어있을 때, 구현에서 settable 로 수정해도 괜찮음
+
+&nbsp;
+
+&nbsp;
+
+### Method
+
+1. instance / type method
+
+   - `static` 
+
+2. mutating method
+
+   `mutating` : instance를 수정하는 것이 허락된 method에 붙이는 keyword (alllowed to modify the instance)
+
+   - value type의 method에서 사용된다 (struct/enum 에서만)
+   - 선언에서 mutating 추가했으면 구현에서는 keyword 생략 가능
+
+&nbsp;
+
+_Example_ : toggle(두 가지 기능으로 전환하는 논리 스위치)
+
+```swift
+protocol Togglable {
+	mutating func toggle()
+}
+
+enum OnOffSwitch: Toggleable {
+  case off, on
+  mutating func toggle() {
+    switch self {
+      case .off:
+      	self = .on
+      case .on:
+      	self = .off
+    }
+  }
+}
+
+var lightSwitch = OnOffSwitch.off
+lightSwitch.toggle()
+// off -> on
+```
+
+&nbsp;
+
+&nbsp;
+
+### Initializer
+
+1. conforming types(프로토콜을 준수할 type)에서 구현할 initializer도 명시할 수 있다.
+
+   ```swift
+   protocol SomeProtocol {
+     init(someParameter: Int)
+   }
+   ```
+
+&nbsp;
+
+2. Class 에서 꼭 구현해야 하는 initializer
+
+   `required`
+
+   ( initializer 더 이해하고 나서 추후 update)
+
+&nbsp;
+
+3. Failable (실패 가능한) Initializer 도 명시 가능
+
+   초기화 실패시 nil을 반환하는 initializer 
+
+&nbsp;
+
+&nbsp;
+
+---
+
+## Protocol 은 type 처럼 사용할 수 있다 
+
+_Protocol as Types_
+
+- protocol은 안에 실제 구현은 없지만 독립적으로 사용할 수 있는 type이다. (fully-fledged type)
+
+- type 사용되는 곳에 protocol도 사용 가능함
+- protocol을 사용하는 이유에 있는 특징
+
+
+
+&nbsp;
+
+&nbsp;
+
+---
+
+## Protocol 준수하기 - extension
+
+_Adding Protocol Conformance with an Extension_
+
+
+
+
+
+---
+
+## 프로토콜 여러 개 사용하기 - &
+
+_Protocol Composition_
+
+- 여러 개의 프로토콜을 동시에 준수할 수 있다. (a type is able ot conform to multiple protocols at the same time)
+
+- 하나의 requirement(자격을 원하는 곳) 에 **&(ampersand)** 사용하여 여러 개의 protocol을 합친 자격을 받을 수 있다.
+
+- 장점 : 프로토콜을 세분화 할 수 있다
+
+- _Example 1_  : 사장의 비서는 운전과 커피를 만드는 능력이 필요하다 
+
+  ```swift
+  protocol Drivable {
+    var driverLicense: String
+    func drive()
+   }
+  
+  protocol Brewable {
+    func brewCoffee()
+  }
+  
+  struct Sajang {
+    var viseo: Drivable & Brewable // protocol끼리 조합시엔 & 사용
+  }
+  ```
+  
+- _Example 2_ : 이름과 나이를 가지는 instance 만 생일 축하해 줄 수 있다.
+
+  ```swift
+  protocol Named {
+    var name: String { get }
+  }
+  
+  protocol Aged {
+    var age: Int { get }
+  }
+  
+  struct Person: Named, Aged {
+    var name: String
+    var age: Int
+  }
+  
+  func wishHappyBirthday(to celebrator: Named & Aged) {
+    print("Happy B-day \(celebrator.name), you're now \(celebrator.age)")
+  }
+  
+  let birthdayPerson = Person(name: "Dana", age: 26)
+  wishHappyBirthday(to: birthdayPerson)
+  // "Happ B-day Dana, you're now 26"
+  ```
+
+&nbsp;
+
+&nbsp;
+
+- protocol도 다른 protocol을 채택할 수 있다.
+
+  ```swift
+  protocol Viseoable : Drivable, Brewable {
+  		func manageSchedule()
+  		var degree: String { get }
+  }
+  ```
+
+&nbsp;
+
+
+
+---
+
+# Protocol Oriented Programming
+
+프로토콜 == 딱지
+
+어떤 역할을 수행할 것임을 보장
+
+구현은 각 타입 내에서 
+
+&nbsp;
+
+protocol + extension = protocol extention
+
+- 특정 타입이 할 일 지정 + 구현을 한번에
+
+&nbsp;
+
+```swift
+protocol LayoutDrawable {
+  func drawSomeLayout()
+}
+
+class MyView: UIView, LayoutDrawable {
+  func drawSomeLayout() {
+    ...
+  }
+}
+```
+
+&nbsp;
+
+- Protocol Default Implementation: 프로토콜 기능을 미리 구현해 둔다.
+  - 각 프로토콜에서 공통적으로 해야할 일은 protocol default implementation에서 설정해 놓으면 됨
+
+```swift
+protocol LayoutDrawable {
+  func drawSomeLayout()
+}
+
+class MyView:UIView, LayoutDrawable {
+	//….
+}
+
+extension LayoutDrawable { // Protocol Default Implementation
+  func drawSomeLayout() {
+    // draw some layout...
+  }
+}
+```
+
+&nbsp;
+
+- swift - struct friendly language => 상속 불가 -> protocol
+
+&nbsp;
+
+### 참조
+
+- [protocol oriented programming in swift (wwdc 15, 408)](https://developer.apple.com/videos/play/wwdc2015/408/)
+
+- [swift에서 프로토콜 중심 프로그래밍 하기](<https://academy.realm.io/kr/posts/protocol-oriented-programming-in-swift/>)
+
+&nbsp;
