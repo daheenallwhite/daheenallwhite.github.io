@@ -3,7 +3,7 @@ layout: post
 title:  "What to Write on Unit Test ?"
 date:   2019-04-21 15:45:59
 author: Dana Lee
-categories: Swift
+categories: [Swift, Unit Test, Programming]
 tags: unit-test
 cover:  "/assets/instacode.png"
 ---
