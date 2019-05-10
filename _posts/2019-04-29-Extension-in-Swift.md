@@ -267,6 +267,60 @@ _기존 자료형을 확장하는 방법_
 
 &nbsp;
 
+------
+
+## 상속  vs  Extension
+
+- 상속 : class의 확장 방법
+
+  - 상속의 경우, subclass의 자료형에 상속된 자료형을 더해 몸집을 불려서 확장해나감
+  - 상속 - 상속을 받아서 새로운 타입을 만들어 확장 (**수직적 확장**)
+    ex ) human 클래스를 상속받아 새로운 기능을 덧붙이려면 이를 상속하는 Student 라는 새로운 타입의 클래스를 만듬
+
+- Extension : 기존 자료형 그대로 거기에 기능을 붙여줌 (**수평적 확장**)
+
+- _Example_ : Human class 기능에 study() method 추가하기
+
+  ```swift
+  class Human {
+  	var name: String
+  	var age: UInt
+  	func think()
+  }
+  ```
+
+  - 상속 - subclass 에서 추가 가능
+
+    ```swift
+    class Student: Human {
+    	func study()
+    }
+    ```
+
+  - extension - Human class 그 자체에 추가 가능
+
+    ```swift
+    extension Human {
+    	func study()
+    }
+    ```
+
+&nbsp;
+
+&nbsp;
+
+### Class 상속의 한계
+
+- 같은 클래스를 상속한 Subclass에서 동일한 기능을 구현하기 위해 **중복코드** 발생 가능
+- _Example_
+  - Human 을 상속받은 Student, Worker 둘다 공부하는 메소드를 구현할 수 잇음 ➢ 중복코드!!
+  - 그렇다고 human에 공부한다는 기능을 넣을 수는 없다
+    - 이유) Human 에서 필요한 기능이 아니고, 모든 서브클래스에 공부하는 기능이 있는 건 아니기 때문!
+
+&nbsp;
+
+&nbsp;
+
 &nbsp;
 
 &nbsp;
