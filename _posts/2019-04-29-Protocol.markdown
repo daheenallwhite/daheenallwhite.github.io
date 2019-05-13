@@ -132,9 +132,9 @@ cover:  "/assets/instacode.png"
 
 - type이 바뀌면 사용할 수 없는 케이스가 생길 수 있음
 
-- protocol(자격)을 가진 instance라면 모두 OK :ok_hand:
+- protocol(자격)을 가진 instance라면 모두 OK :ok_hand: (Protocol as Types)
 
-- type보다 좀 더 유연한 접근
+- type보다 좀 더 유연한 접근 
 
 - 목적에만 부합하면 괜찮은 경우
 
@@ -148,6 +148,8 @@ cover:  "/assets/instacode.png"
 
 - function을 사용하는 모든 타입(class, struct, enum)이 protocol 채택 가능
 
+- 상속이 가능한 type은 class 뿐인데, value type인 struct, enum도 타입 확장 가능한 방법 
+
 &nbsp;
 
 &nbsp;
@@ -159,7 +161,12 @@ cover:  "/assets/instacode.png"
 - 타입 정의할 때 **_'protocol을 상속받는다'_ 라고 :exclamation: 절대:exclamation: 쓰지 않는다**
 
   - 이 protocol은 어떤 type에 의해 **채택되었다 (adopted)**
-- 구현하는 type은 이 protocol을 **준수한다 (conformed)**
+  
+    (구현하는 type 관점)
+  
+  - 구현하는 type은 이 protocol을 **준수한다 (conformed)**
+  
+    (protocol 관점 혹은 protocol을 채택하려면 자격요건을 구현한 코드가 있어야 된다는 의미에서의 준수. rule을 잘 따르고 있는지의 여부.)
   
 - _Example_
 
@@ -196,7 +203,7 @@ protocol 에서 property 요구조건으로 명시하는 것들
 1. property 의 **이름** 과 **type** 
 2. instance / type property 도 명시해줄 수 있다. 
    - type property : 앞에 `static` 붙임
-3. gettable (read-only) / gettable & settable 인지 명시해준다.
+3.  gettable & settable / gettable (read-only) 인지 명시해준다.
    - gettable & settable
      - stored constant property :x:
      - computed property :x:
@@ -208,15 +215,15 @@ protocol 에서 property 요구조건으로 명시하는 것들
 
 ### Method
 
-1. instance / type method
+1. type / instance method
 
-   - `static` 
+   - `static`  or not
 
 2. mutating method
 
    `mutating` : instance를 수정하는 것이 허락된 method에 붙이는 keyword (alllowed to modify the instance)
 
-   - value type의 method에서 사용된다 (struct/enum 에서만)
+   - **value type**의 method에서 사용된다 (**struct/enum** 에서만)
    - 선언에서 mutating 추가했으면 구현에서는 keyword 생략 가능
 
 &nbsp;
@@ -286,9 +293,43 @@ _Protocol as Types_
 - protocol은 안에 실제 구현은 없지만 독립적으로 사용할 수 있는 type이다. (fully-fledged type)
 
 - type 사용되는 곳에 protocol도 사용 가능함
-- protocol을 사용하는 이유에 있는 특징
+- protocol을 사용하는 이유를 뒷받침 하는 특성
 
+&nbsp;
 
+_Example : class Dice_
+
+- side가 몇개인지, n개 side 중 어떤 side가 나오는지 random number generator 를 가짐
+
+- RandomNumberGenerator protocol : 어떻게 random number를 생성하는지는 중요하지 않고, `random()` method를 구현하면 자격 충족 
+
+- 어떤 type인지는 상관 없이 RandomNumberGenerator를 채택한 type의 instance라면 `generator` property에 들어갈 수 있다.
+
+  ```swift
+  class Dice {
+    let numberOfSides: Int
+    let generator: RandomNumberGenerator //protocol
+    
+    init(sides: Int, generator: RandomNumberGenerator) {
+        self.sides = sides
+        self.generator = generator
+    }
+    
+    func roll() -> Int {
+        return Int(generator.random() * Double(sides)) + 1
+    }
+  }
+  ```
+
+  ```swift
+  var d6 = Dice(sides: 6, generator: LinearCongruentialGenerator())
+  
+  for _ in 1...5 {
+    print("Random dice roll is \(d6.roll())")
+  }
+  ```
+
+  
 
 &nbsp;
 
@@ -300,9 +341,36 @@ _Protocol as Types_
 
 _Adding Protocol Conformance with an Extension_
 
+- extension 사용하면 이미 존재하는 type에 property, method, subscript 등 여러 기능을 추가할 수 있다
+- protocol requirement 도 extension을 사용해서 adopt & conform 할 수 있다.
 
+&nbsp;
 
+_Example : class Dice 가 protocol TextRepresentable 준수하도록 코드 작성_
 
+모든 Dice instance는 TextRepresentable를 준수한다
+
+== TextRepresentable 의 instance 인 것처럼 처리될 수 있다.
+
+```swift
+protocol TextRepresentable {
+	var textDescription: String { get }
+}
+
+extension Dice : TextRepresentable {
+  var textDescription: String {
+    return "A \(numberOfSides)-sided dice"
+  }
+}
+
+let d12 = Dice(sides: 12, generator: LinearCongruentialGenerator())
+print(d12.textualDescription)
+// Prints "A 12-sided dice"
+```
+
+&nbsp;
+
+&nbsp;
 
 ---
 
@@ -314,7 +382,13 @@ _Protocol Composition_
 
 - 하나의 requirement(자격을 원하는 곳) 에 **&(ampersand)** 사용하여 여러 개의 protocol을 합친 자격을 받을 수 있다.
 
-- 장점 : 프로토콜을 세분화 할 수 있다
+- 장점 
+
+  - 프로토콜을 세분화 할 수 있다 
+
+  - 일시적으로 두 protocol의 자격요건을 합친 protocol을 만든 것처럼 사용할 수 있다
+
+    → 합친 새로운 protocol을 만들기는 비효율적일 때...
 
 - _Example 1_  : 사장의 비서는 운전과 커피를 만드는 능력이 필요하다 
 
@@ -362,7 +436,13 @@ _Protocol Composition_
 
 &nbsp;
 
-- protocol도 다른 protocol을 채택할 수 있다.
+---
+
+## Protocol 상속 (Inheritance)
+
+- protocol도 다른 protocol을 채택할 수 있다. (한개 이상)
+
+- sub protocol은 super protocol에서 선언한 method, property 다 사용 가능하다 (상속의 특징)
 
   ```swift
   protocol Viseoable : Drivable, Brewable {
@@ -373,19 +453,102 @@ _Protocol Composition_
 
 &nbsp;
 
-
+&nbsp;
 
 ---
 
-# Protocol Oriented Programming
+## Class-Only Protocol
 
-프로토콜 == 딱지
+Class만 채택하도록 한정하는 protocol
 
-어떤 역할을 수행할 것임을 보장
+AnyObject protocol을 상속받으면 class-only protocol이 됨
 
-구현은 각 타입 내에서 
+class type만 이 protocol을 채택할 수 있다.
+
+```swift
+protocol ClassOnly: AnyObject, .. {
+
+}
+```
 
 &nbsp;
+
+&nbsp;
+
+---
+
+## Protocol 준수하는지 확인하기 
+
+_Checking for Protocol Conformance_
+
+- ***Type Casting*** 사용해서 확인할 수 있다
+
+- keyword : ***is*** & ***as***
+
+  - target ***is*** someType : target이 이 type이 맞나요 → 맞으면 true, 아니면 false
+  - target ***as?(!)*** someType : target을 someType으로 *downcast* (using with optional binding)
+
+- *Example*
+
+  ```swift
+  struct Point {
+  	var x: Int, y: Int
+  }
+  
+  struct Rect {
+    var leftTop: Point
+    var rightBottom: Point
+  }
+  
+  protocol HasArea {
+    var area: Double { get }
+  }
+  
+  extension Rect: HasArea {
+    var area: Double {
+      return (rightBottom.x - leftTop.x) * (leftTop.y - rightBottom.y)
+    }
+  }
+  ```
+
+  ```swift
+  let originPoint = Point(x: 0, y: 0)
+  let myRect = Rect(leftTop: Point(x: 0, y: 10), rightBottom: Point(x: 10, y: 0))
+  
+  let objects: [AnyObject] = [originPoint, myRect]
+  
+  for object in objects {
+    if object is Point {
+    	print("Point (\(object.x), \(object.y))")
+  	}
+    
+    if let rectangle = object as? Rect {
+      print("Area of rectangle: \(rectangle.area)")
+    }
+  }
+  ```
+
+&nbsp;
+
+&nbsp;
+
+---
+
+## Delegation (역할 위임)
+
+*(Update later)*
+
+---
+
+## Optional Protocol Requirements 
+
+*(Update later)*
+
+---
+
+## Protocol 확장하기 (Protocol Extensions)
+
+*(Update later)*
 
 protocol + extension = protocol extention
 
@@ -427,6 +590,16 @@ extension LayoutDrawable { // Protocol Default Implementation
 ```
 
 &nbsp;
+
+---
+
+# Protocol Oriented Programming
+
+*(Update later)*
+
+&nbsp;
+
+
 
 - swift - struct friendly language => 상속 불가 -> protocol
 
