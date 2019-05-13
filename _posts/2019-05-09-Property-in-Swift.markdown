@@ -129,6 +129,8 @@ cover:  "/assets/instacode.png"
 
 - getter, optional setter 를 통해 다른 속성이나 값을 가져오는 property
 
+- getter 만 정의하면 get-only property
+
 - setter : 다른 property 값을 간접적으로 불러오거나 세팅하기 위해서 사용
 
 - 언제 사용하지?
