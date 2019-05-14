@@ -239,3 +239,15 @@ _Conforming to the Comparable protocol_
    비교 연산자를 구현하여 준수한다
 
 &nbsp;
+
+### Reference
+
+[Equatable protocol - 공식문서](https://developer.apple.com/documentation/swift/equatable)
+
+[Equatable protocol - source code](https://github.com/apple/swift/blob/master/stdlib/public/core/Equatable.swift)
+
+[Comparable protocol - 공식문서](https://developer.apple.com/documentation/swift/comparable)
+
+[Comparable protocol - source code](https://github.com/apple/swift/blob/master/stdlib/public/core/Comparable.swift)
+
+equlity vs. identity - 빅 너드 랜치의 스위프트 프로그래밍 
