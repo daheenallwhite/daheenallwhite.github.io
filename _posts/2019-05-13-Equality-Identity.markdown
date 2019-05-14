@@ -69,7 +69,7 @@ protocol Equatable
 
 &nbsp;
 
-### Equatable protocol 준수하기
+## Equatable protocol 준수하기
 
 _Conforming to the Equatable Protocol_
 
