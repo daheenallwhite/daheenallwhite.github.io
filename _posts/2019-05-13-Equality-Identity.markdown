@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Equality/Identity - Protocol Equatable & Comparable"
+title:  "Equality vs. Identity - Protocol Equatable & Comparable"
 date:   2019-05-13 14:16:00
 author: Dana Lee
 categories: [Swift, Equatable, Comparable]
