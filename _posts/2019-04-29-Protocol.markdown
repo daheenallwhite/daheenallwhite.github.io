@@ -119,6 +119,8 @@ cover:  "/assets/instacode.png"
 
 - 행위 자체의 구체적인 구현은 다를 수 있지만, protocol을 가진다는 것은 자격을 가진다는 것
 
+- protocol은 class 와는 다르게 여러개 채택이 가능하다
+
 
 &nbsp;
 
