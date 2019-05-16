@@ -57,7 +57,7 @@ Robert C Martin (갓 클린코드를 쓴 사람) 이 제안했으며 OOP design 
 
 ## SOLID
 
-![SOLID diagram](../assets/SOLID.png)
+![SOLID diagram]({{site.url}}/assets/SOLID.png)
 
 - SIP 가 가장 먼저 고려해야하고, 우선순위가 높은 원칙이다
 - OCP는 모든 원칙의 기반이 된다 
@@ -69,7 +69,7 @@ Robert C Martin (갓 클린코드를 쓴 사람) 이 제안했으며 OOP design 
 
 *brainstorming tool for object oriented software*
 
-![CRC card](../assets/CRC-card.png)
+![CRC card]({{site.url}}/assets/CRC-card.png)
 
 - 객체 지향 프로그램의 각 class가 SIP 원칙을 준수하는지 확인할 수 있다.
 - *Knowing* : 이 책임/역할을 하려면 알아야 할 것으로 property에 해당한다
@@ -162,7 +162,7 @@ enum을 사용할 경우, switch-case 문으로 각 case에 대한 처리를 하
 - [SOLID Principles every Developer Should Know](https://blog.bitsrc.io/solid-principles-every-developer-should-know-b3bfa96bb688)
 - [Understanding SOLID Principles: Dependency Inversion](https://codeburst.io/understanding-solid-principles-dependency-injection-d570c15560ab)
 
-
+&nbsp;
 
 
 
