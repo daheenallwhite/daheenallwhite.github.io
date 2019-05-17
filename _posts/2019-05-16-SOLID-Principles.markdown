@@ -5,7 +5,7 @@ date:   2019-05-16 18:40:59
 author: Dana Lee
 categories: [Programming, OOP, SOLID principles]
 tags: SOLID OOP CRC object indirection
-cover:  "/assets/instacode.png"
+cover:  "/assets/SOLID.png"
 ---
 
 # SOLID principles 
