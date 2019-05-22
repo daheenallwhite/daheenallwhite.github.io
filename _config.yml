@@ -9,7 +9,9 @@ gems:
 exclude:
   - "/vendor/"
 
+# google analytics
 g-analytics: UA-140592254-1
+
 # Site settings
 title: All White Cheat Sheet
 subtitle: "언제든지 기억날 수 있도록 간단하고 명료하게 내 방식대로 정리하는 블로그"
