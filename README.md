@@ -1,8 +1,6 @@
 # Daheen's Journey to iOS developer :airplane:
 
-
-
-# Setting up the first jekyll blog
+## Setting up the first jekyll blog
 
 #### Reference
 
@@ -10,7 +8,7 @@
 
 
 
-### Costume Setting
+### Custom Setting
 
 1. 초기 설정 - config, theme, remote 등등...
 
@@ -61,6 +59,18 @@
 
    - [favicon 생성 사이트](https://www.favicon-generator.org/)
    - [참조](https://webdir.tistory.com/337)
+   
+10. google analytics 추가 (2019.05.21)
+
+   - Config 에 tracking id 추가, ...
+
+   - [참조 사이트](https://rextarx.github.io/jekyll/2017/02/03/Applying_Google_Analytics_to_a_blog_using_Jekyll/)
+
+11. google 검색 추가 (2019.05.21)
+
+    - sitemap.xml 추가
+    - [참조 사이트](https://wayhome25.github.io/etc/2017/02/20/google-search-sitemap-jekyll/)
+    - [참조 사이트](https://gmlwjd9405.github.io/2017/10/20/include-blog-in-a-GoogleSearchEngine.html)
 
 &nbsp;
 
@@ -71,5 +81,5 @@
 - GitHub badges
   - [shields.io](https://github.com/badges/shields)
 - draft 사용해보기
-- Tag 
+- Tag archive page
 - category
