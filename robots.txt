@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+User-agent: *
+Disallow: /about/
+
+Sitemap: http://daheenallwhite.github.io/sitemap.xml
