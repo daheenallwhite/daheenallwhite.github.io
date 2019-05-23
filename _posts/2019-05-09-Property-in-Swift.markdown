@@ -280,9 +280,9 @@ cover:  "/assets/instacode.png"
 - 객체가 몇개가 생기던지 상관 없이 단 한개 copy 의 property만 존재
 - 언제 쓰일까? :confused:
   - **모든 객체가 universal하게 공동으로 사용할 value**
-  - variable, constants
+  - variable(let), constants(var)
 - 선언 방법
-  - `static var` or `class var`
+  - `let` / `var` 앞에 `static` or `class`  붙임 :heavy_plus_sign:
   - computed type property - `class`
     - 하위 class 에서 overriding을 허용하게 해줌.
 - 유의할 점
