@@ -220,5 +220,8 @@ swift에서 String을 구성하는 문자는 `Character` type을 사용한다. �
 - 빅 너드 랜치의 스위프트 프로그래밍
 - [Apple documentation - String](https://developer.apple.com/documentation/swift/string)
 - [Apple documentation - UnicodeScalarView](https://developer.apple.com/documentation/swift/string/1539070-unicodescalars)
+- 유니코드 관련
+  - [유니코드와 UTF-8 / UTF-16](https://goodgid.github.io/Unicode-And-UTF-Encoding/)
+  - [유니코드, UTF-8, UTF-16, UTF-32 간단 정리](https://blog.ggaman.com/896)
 
 &nbsp;
