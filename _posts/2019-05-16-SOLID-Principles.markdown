@@ -59,7 +59,7 @@ Robert C Martin (갓 클린코드를 쓴 사람) 이 제안했으며 OOP design 
 
 ![SOLID diagram]({{site.url}}/assets/SOLID.png)
 
-- SIP 가 가장 먼저 고려해야하고, 우선순위가 높은 원칙이다
+- SRP 가 가장 먼저 고려해야하고, 우선순위가 높은 원칙이다
 - OCP는 모든 원칙의 기반이 된다 
 - DIP 에 Factory Pattern이 해당될 수 있다
 
