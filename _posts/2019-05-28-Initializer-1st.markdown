@@ -4,7 +4,7 @@ title:  "Initializer (1) : get ready for new instance! "
 date:   2019-05-28 21:37:59
 author: Dana Lee
 categories: Swift
-tags: initializer swift
+tags: Initializer Swift
 cover:  "/assets/instacode.png"
 ---
 
@@ -14,9 +14,7 @@ cover:  "/assets/instacode.png"
 
 ## Initialization
 
-class, struct, enum 을 사용하기 전에 준비해 주는 과정
-
-새로운 instance 를 사용준비 해주는 과정
+> Initialization이란, class, struct, enum 을 사용하기 전에 준비해 주는 과정이다. 즉, 새로운 instance 를 사용을 위해 준비 해주는 과정이다
 
 > *Initialization* is the process of preparing an instance of a class, structure, or enumeration for use. This process involves setting an initial value for each stored property on that instance and performing any other setup or initialization that is required before the new instance is ready for use.
 
@@ -30,14 +28,12 @@ class, struct, enum 을 사용하기 전에 준비해 주는 과정
 
 ### :pushpin: Table of Contents
 
-(1) : 1, 2, 3 / (2) : 4, 5, 6, 7
-
-1. 목적
-2. Initializer 
-   - custom
-   - default
-   - memberwise
-3. Initializer Delegation for Value types
+1. **목적**
+2. **Initializer** 
+   - **custom**
+   - **default**
+   - **memberwise**
+3. **Initializer Delegation for Value types**
 4. Class Inheritance & Initializer
    - Designated / Convenience
    - 2단계 초기화 (2 Phase Initialization)
@@ -57,14 +53,14 @@ class, struct, enum 을 사용하기 전에 준비해 주는 과정
 
   ***모든 stored property에 초기값 지정하여 새 instance를 사용할 수 있는 상태로 만든다.***
 
-- optional이 아닌 모든 stored property 에 초기값을 지정해 줘야됨 (default value 있는 경우 제외)
-  - Non-optional : 메모리 공간안에 반드시 값이 있음을 의미
+- optional이 아닌 모든 stored property 은 초기값을 지정해 줘야됨
+  - non-optional : 메모리 공간안에 반드시 값이 있음을 의미
   - optional : 메모리 공간 안에 값이 없을 수도 있음을 의미
 - swift 는 안전을 최우선으로 하는 언어 → 빈 메모리 공간에 접근할 일이 없도록 하는 것이 initializer의 목적
 
 - 초기값 지정 방법
 
-  1. initializer : init() 안에서 값을 넣는 방식
+  1. initializer : `init()` 안에서 값을 넣는 방식
   2. default value : property 선언하면서 초기값 넣는 방식
 
   ```swift
@@ -81,7 +77,7 @@ class, struct, enum 을 사용하기 전에 준비해 주는 과정
 
   
 
-- 언제 init? 언제 default?
+- :question: 언제 init? 언제 default?
 
   - 항상 같은 값으로 초기화 된다면 default value가 적절. default value로 초기화하는게 declaration에 좀 더 가까운 방법이다.
   - 객체 생성시 마다 다른 값으로 setting 되어야 한다면 initializer 가 적절
