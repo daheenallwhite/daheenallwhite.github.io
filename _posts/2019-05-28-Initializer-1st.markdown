@@ -12,6 +12,8 @@ cover:  "/assets/instacode.png"
 
 # Initializer
 
+*1st - Initalizer 기본*
+
 ## Initialization
 
 > Initialization이란, class, struct, enum 을 사용하기 전에 준비해 주는 과정이다. 즉, 새로운 instance 를 사용을 위해 준비 해주는 과정이다
@@ -133,9 +135,26 @@ cover:  "/assets/instacode.png"
 
 &nbsp;
 
+&nbsp;
+
+------
+
+## Summary / Thoughts
+
+- 초기화 과정에서는 non-optional property의 초기값을 지정해 주어야 한다
+- initializer는 다른 initializer를 호출하여 초기화 과정을 서로 품앗이 할 수 있다
+- 초기화 과정에서 init / default value가 적절한 상황을 고려해야 효율적인 설계가 될 것이다
+- swift initializer 에서 인상 깊은 부분은 struct에 default 로 memberwise init 제공하는 것이다. value type은 확실하게 static memory에서 관리하려는 의도라고 생각한다.
+- init delegation 은 코드 중복을 줄이는 효율적인 방법이라고 생각한다.
+
+&nbsp;
+
 ---
 
 ### Reference
 
 [swift language guide - Initialization](https://docs.swift.org/swift-book/LanguageGuide/Initialization.html#)
 
+&nbsp;
+
+&nbsp;
