@@ -74,6 +74,8 @@ class, struct, enum 을 사용하기 전에 준비해 주는 과정
 
 &nbsp;
 
+---
+
 ## 2. Initializer
 
 ### Custom Initializer
@@ -105,6 +107,8 @@ class, struct, enum 을 사용하기 전에 준비해 주는 과정
 
 &nbsp;
 
+---
+
 ## 3. Initializer Delegation for Value type
 
 - Initializer Delegation : 일종의 품앗이 개념
@@ -118,6 +122,8 @@ class, struct, enum 을 사용하기 전에 준비해 주는 과정
   - for class : 상속이 있으므로, 상속받은 property에 대한 init도 고려해야됨. 상대적으로 복잡
 
 &nbsp;
+
+---
 
 ## 4. Class Initializer
 
@@ -154,6 +160,8 @@ class, struct, enum 을 사용하기 전에 준비해 주는 과정
 
 - *secondary* init - 필수는 아니다
 
+  > Convenience initializers* are secondary, supporting initializers for a class. You can **define a convenience initializer to call a designated initializer from the same class as the convenience initializer with some of the designated initializer’s parameters set to default values**. You can also define a convenience initializer to create an instance of that class for a specific use case or input value type.
+
 - `convenience` keyword : init 앞에 명시해줌
 
 - 주로 designated init에서 몇개의 parameter에 default value를 지정해서 designated init을 call 하는 방식
@@ -176,7 +184,51 @@ class, struct, enum 을 사용하기 전에 준비해 주는 과정
 
 - 목적 : 초기화하는 좀 더 단순한 방법을 제공하고, 의도를 명확하게 하기 위함
 
+&nbsp;
 
+### 2 단계 초기화
+
+class 계층구조에서 초기화는 두 단계로 이루어진다.
+
+- **Safety check 1**
+
+  A designated initializer must ensure that all of the properties introduced by its class are initialized before it delegates up to a superclass initializer.
+
+As mentioned above, the memory for an object is only considered fully initialized once the initial state of all of its stored properties is known. In order for this rule to be satisfied, a designated initializer must make sure that all of its own properties are initialized before it hands off up the chain.
+
+- **Safety check 2**
+
+  A designated initializer must delegate up to a superclass initializer before assigning a value to an inherited property. If it doesn’t, the new value the designated initializer assigns will be overwritten by the superclass as part of its own initialization.
+
+- **Safety check 3**
+
+  A convenience initializer must delegate to another initializer before assigning a value to *any*property (including properties defined by the same class). If it doesn’t, the new value the convenience initializer assigns will be overwritten by its own class’s designated initializer.
+
+- **Safety check 4**
+
+  An initializer cannot call any instance methods, read the values of any instance properties, or refer to `self` as a value until after the first phase of initialization is complete.
+
+> 1단계 ↑ 
+
+---
+
+## Summary / Thoughts
+
+- 초기화 과정에서는 non-optional property의 초기값을 지정해 주어야 한다
+- class 는 상속으로 인해 initializer 구성이 복잡하다
+- struct 가 memberwise initializer를 자동으로 제공하는데는 swift의 안전 우선 특성이 반영되어있다.
+- initializer는 다른 initializer를 호출하여 초기화 과정을 서로 품앗이 할 수 있다
+- initializer는 기본적으로 상속될 수 없지만, 특정 조건 하에서는 상속된다.
+- 초기화 과정에서 init / default value가 적절한 상황을 고려해야 효율적인 설계가 될 것이다
+- 
+
+
+
+---
+
+### Reference
+
+[swift language guide - Initialization](https://docs.swift.org/swift-book/LanguageGuide/Initialization.html#)
 
 enum initializer
 
