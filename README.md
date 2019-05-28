@@ -80,7 +80,11 @@ This blog is for archiving what I learn every day. The posts are usally about iO
     
 12. draft folder 추가 (2019.05.10)
 
-13. 
+13. heading font 수정 (2019.05.28)
+
+    - 파일 경로 : `_sass/base/_variable.scss` 
+    - 변수명: `$heading-font-family`
+    - font : Roboto Slab → Open Sans
 
 &nbsp;
 
