@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Initializer (1) : get ready for new instance! "
+title:  "Initializer (1) : Get Ready for New Instance! "
 date:   2019-05-28 21:37:59
 author: Dana Lee
 categories: Swift
