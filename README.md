@@ -6,11 +6,9 @@ This blog is for archiving what I learn every day. The posts are usally about iO
 
 &nbsp;
 
-## Setting up the first jekyll blog
+## :wrench: Setting up the first jekyll blog
 
-#### Theme
-
-[centrarium](https://github.com/bencentra/centrarium)
+#### Theme [centrarium](https://github.com/bencentra/centrarium)
 
 &nbsp;
 
@@ -86,13 +84,18 @@ This blog is for archiving what I learn every day. The posts are usally about iO
     - 변수명: `$heading-font-family`
     - font : Roboto Slab → Open Sans
 
-&nbsp;
+14. Tags archive page 추가 (2019.05.29)
+
+    - `post.html` 참조함
+    - `site.tags` 로 변수만 수정
 
 &nbsp;
 
-### To Do Later
+&nbsp;
+
+### :bookmark: To Do Later
 
 - GitHub badges
   - [shields.io](https://github.com/badges/shields)
 - <s>draft 사용해보기</s>
-- Tag archive page
+- <s>Tag archive page</s>
