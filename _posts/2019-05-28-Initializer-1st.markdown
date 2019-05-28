@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Initializer (1): get ready for new instance! "
+title:  "Initializer (1) : get ready for new instance! "
 date:   2019-05-28 21:37:59
 author: Dana Lee
-categories: swift
+categories: Swift
 tags: initializer swift
 cover:  "/assets/instacode.png"
 ---
