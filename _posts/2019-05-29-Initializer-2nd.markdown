@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Initializer (2) : it is all because of inheritance in class"
-date:   2019-05-28 21:37:59
+date:   2019-05-29 03:14:59
 author: Dana Lee
 categories: Swift
-tags: Initializer Swift class inheritance
+tags: Initializer Swift inheritance
 cover:  "/assets/post-image/class-init-type.png"
 ---
 
@@ -56,9 +56,9 @@ cover:  "/assets/post-image/class-init-type.png"
   - **Designated**
   - **Convenience**
 
-&nbsp;
-
 ![]({{site.url}}/assets/post-image/class-init-type.png)
+
+&nbsp;
 
 ### Designated Initializer
 
@@ -109,8 +109,6 @@ cover:  "/assets/post-image/class-init-type.png"
 
 &nbsp;
 
-&nbsp;
-
 ### :bulb: Initializer Delegation for Class Types 
 
 Delegation 은 초기화를 온전히 다 담당하지 않고, 일부를 다른 initializer에게 맡기는 것이다. Class의 경우, 상속관계와 convenience init로 인해 비교적 복잡하다. 그래서 class initializer delegation에는 3개 규칙이 있다.
@@ -130,10 +128,6 @@ Delegation 은 초기화를 온전히 다 담당하지 않고, 일부를 다른 
    convenience 는 궁극적으로 designated를 호출해야 함. 화살표를 따라가면 끝은 designated 라는 뜻!
 
 ![](https://docs.swift.org/swift-book/_images/initializerDelegation01_2x.png)
-
-&nbsp;
-
-&nbsp;
 
 &nbsp;
 
@@ -292,8 +286,6 @@ Convenience init {
 1. subclass가 designated init을 선언하지 않으면, superclass designated init 상속 받는다
 2. subclass 가 superclass designated init을 모두 구현했다면, superclass convenience init 도 모두 상속 받는다
    - 구현은 rule 1 혹은 재정의한 경우를 의미한다.
-
-&nbsp;
 
 *Example*
 
