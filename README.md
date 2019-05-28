@@ -1,14 +1,20 @@
 # Daheen's Journey to iOS developer :airplane:
 
+This blog is for archiving what I learn every day. The posts are usally about iOS contents including Swift, HIG, Xcode, and often programming generals such as Design Pattern, Algorithm, and so on.
+
+&nbsp;
+
+&nbsp;
+
 ## Setting up the first jekyll blog
 
-#### Reference
+#### Theme
 
-- Theme - [centrarium](https://github.com/bencentra/centrarium)
+[centrarium](https://github.com/bencentra/centrarium)
 
+&nbsp;
 
-
-### Custom Setting
+#### Custom Setting
 
 1. 초기 설정 - config, theme, remote 등등...
 
@@ -71,6 +77,10 @@
     - sitemap.xml 추가
     - [참조 사이트](https://wayhome25.github.io/etc/2017/02/20/google-search-sitemap-jekyll/)
     - [참조 사이트](https://gmlwjd9405.github.io/2017/10/20/include-blog-in-a-GoogleSearchEngine.html)
+    
+12. draft folder 추가 (2019.05.10)
+
+13. 
 
 &nbsp;
 
@@ -80,6 +90,5 @@
 
 - GitHub badges
   - [shields.io](https://github.com/badges/shields)
-- draft 사용해보기
+- <s>draft 사용해보기</s>
 - Tag archive page
-- category
