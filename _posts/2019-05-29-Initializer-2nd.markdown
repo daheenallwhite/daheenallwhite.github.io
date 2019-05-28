@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Initializer (2) : it is all because of inheritance in class"
+title:  "Initializer (2) : It's All Because of Inheritance in Class"
 date:   2019-05-29 03:14:59
 author: Dana Lee
 categories: Swift
