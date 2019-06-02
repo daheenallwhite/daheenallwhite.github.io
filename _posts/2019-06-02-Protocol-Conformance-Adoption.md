@@ -53,7 +53,7 @@ extension Hamster: TextRepresentable {}
 
 다시 설명하자면, 
 
-Hamster struct 에서 TextRepresentable protocol 의 요구 사항을 ***준수***한 상태라면, 빈 extension으로 protocol을 ***채택***하면 된다.
+`Hamster` struct 에서 `TextRepresentable` protocol 의 요구 사항을 ***준수***한 상태라면, 빈 `extension`으로 protocol을 ***채택***하면 된다.
 
 &nbsp;
 
