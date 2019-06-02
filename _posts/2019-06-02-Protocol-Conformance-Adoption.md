@@ -22,7 +22,7 @@ Swift에서는 자료구조의 수평적 확장을 위해 Protocol 을 사용한
 
 하지만 오늘 swift language guide를 보다가 확실하게 구분할 수 있는 결정적인 topic이 있었다.
 
-[Declaring Protocol Adoption with an Extension](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html#ID278)
+> [Declaring Protocol Adoption with an Extension](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html#ID278)
 
 existing type에서 이미 protocol이 명세한 요구 조건(property or method)를 이미 구현해 놓은 상태라면, `extension` 과 protocol 이름만 명시하고, 구현부를 공백으로 두면 해당 타입이 그 프로토콜을 준수하게 된다.
 
@@ -59,17 +59,17 @@ Hamster struct 에서 TextRepresentable protocol 의 요구 사항을 ***준수*
 
 따라서, 준수와 채택의 차이는 ***코드에서의 위치***로도 설명할 수 있다.
 
-> `{}` 안에서 요구사항 구현 : 준수 (conformance)
+> 준수 (*Conformance*) -  `{}` 안에서 요구사항 구현 <br>
 >
-> `Type : Protocol` 형식으로 명시하는 부분 : 채택 (Adoption)
+> 채택 (*Adoption*) - `Type : Protocol` 형식으로 명시하는 부분 
+
+![Difference between Conformance and Adoption in Swift Protocol]({{site.url}}/assets/post-image/protocol-adoption-conformance.png)
 
 &nbsp;
 
 기존에 내가 이해했던 시점, 관점의 차이도 어느정도 설명이 된다. 결국 타입 시점에서 프로토콜을 **채택**하면 `:` 를 추가하여 명시하는 과정이 필요하다. 프로토콜 관점에서 존재하던 타입이 해당 프로토콜을 **준수**하면, 구체적으로 요구 사항을 구현한다. 하지만 확실하게 어떤 부분이 준수이고 어떤 부분이 채택이다라고 설명하는데는 부족함이 있었다.
 
 더 확실하게는 구현부에 대해서는 준수, 명시하는 부분은 채택 - 구현 위치로 표현을 다르게 사용하면 된다.
-
-![Difference between Conformance and Adoption in Swift Protocol]({{site.url}}/assets/post-image/protocol-adoption-conformance.png)
 
 &nbsp;
 
