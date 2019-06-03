@@ -48,7 +48,10 @@ copying — the effect of assignment, initialization, and argument passing — c
 > One of the primary reasons to choose value types over reference types is the ability to more easily reason about your code. If you always get a unique, copied instance, you can trust that no other part of your app is changing the data under the covers. This is especially helpful in multi-threaded environments where a different thread could alter your data out from under you. This can create nasty bugs that are extremely hard to debug.
 
 - reference type 단점
-    - 여러 변수가 한 instance를 share 하기 때문에,
+    - 여러 변수가 한 instance를 share 하기 때문에 생기는 문제
+    - Multi-thread
+    - 코드 파악의 어려움
+- value type
 
 &nbsp;
 
@@ -58,7 +61,7 @@ copying — the effect of assignment, initialization, and argument passing — c
 
 - 내부 property 변동 가능
 - reference 값만 못 바꿈
-- class에서 let, var 차이는 instance를 reassign 가능/불가능 여부
+- class에서 let, var 차이는 **instance를 reassign 가능/불가능 여부**
 - 할당된 instance를 바꿀 수 있음 → var / 없음 → let
 
 ### struct 변수 let으로 선언
@@ -91,3 +94,61 @@ copying — the effect of assignment, initialization, and argument passing — c
 > →The system uses the heap to store data referenced by other objects. The heap is generally a large pool of memory from which the system can request and dynamically allocate blocks of memory. The heap doesn’t automatically destroy its object like the stack does. External work has to be done to do this. ARC does the job in apple devices. Reference count is tracked by the ARC and when it becomes zero, the object is deallocated. Hence, the overall process (allocation , tracking the references and deallocation) is slower compared to stack. So value types are faster than reference types.
 
 > copying — the effect of assignment, initialization, and argument passing — creates an *independent instance* with its own unique copy of its data:
+
+
+
+### ARC
+
+??
+
+
+
+## Class
+
+ios 프레임워크의 대부분의 큰 뼈대는 모두 class 로 구성
+
+상속은 class 만 가능
+
+
+
+## Struct
+
+swift의 대부분의 큰 뼈대는 모두 struct로 구성
+
+### 구조체는 언제 쓸까?
+
+연관된 몇몇 값을 모아 하나의 데이터 타입으로 표현하고 싶을 때
+
+다른 곳으로 전달시 참조가 아닌 복사를 원할 때 (원본 데이터 변화 원하지 않을 때)
+
+상속받을 필요가 없을 때
+
+
+
+## Enum
+
+of value type
+
+(instance/type) method, computed property 가질 수 있음
+
+
+
+## 상속
+
+추상적 → 구체적 인 type으로 가는 개념
+
+점차 점차
+
+ex. 사람 → 학생 → 대학생
+
+
+
+단일상속
+
+
+
+
+
+## 참조
+
+[Swift 성능 이해하기: Value 타입, Protocol과 스위프트의 성능 최적화](https://academy.realm.io/kr/posts/letswift-swift-performance/)
