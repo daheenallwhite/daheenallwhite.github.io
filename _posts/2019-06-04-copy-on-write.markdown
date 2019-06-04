@@ -12,6 +12,12 @@ cover:  "/assets/instacode.png"
 
 # Copy-On-Write (COW)
 
+Swift value type 은 함수에 값을 넘기거나, 프로퍼티에 저장할 때, 한 인스턴스를 공유하지 않고, 복사하여 사용한다. 
+
+그렇다면 매번 복사해서 사용하는 걸까? Array 에 엄청나게 많은 값이 있을 때도? 혹은 2차, 3차원 배열일때도? 
+
+항상 복사한다면 저장된 값의 수가 많을 수록 성능 저하를 일으킬 것이다. Swift 에서는 이런 경우를 대비해서 관리하는 방법이 있다. 바로 Copy-On-Write behavior이다. 한마디로 정리하자면 필요할 때만, 복사가 필요하다고 판단될 때만 복사하고, 아닐땐 그냥 그 instance를 그대로 참조해서 사용하는 방법이다.
+
 - Value type 중에 Array, Collection에 사용되는 기법
 
 - value type : 변수에 value type할당할 때, 혹은 func에 인자를 넘길 때 copy! 즉, 값을 복사하여 넘긴다
@@ -30,36 +36,43 @@ cover:  "/assets/instacode.png"
 
 - 하나 이상의 reference가 있어야 할 경우 (ex. append) 그 때 copy 한다
 
-    ```swift
-     import Foundation
-    
-      func print(address o : UnsafeRawPointer) {
-          print(String(format: "%p", Int(bitPattern: o)))
-      }
-    
-      var array1: [Int] = [1,2,3]
-      var array2 = array1
-    
-      print(address: array1)
-      print(address: array2)
-      // 0x7f8a90f194a0 
-      // 0x7f8a90f194a0 
-      // 두 배열 reference 가 같다
-      // uniquely referenced라면 copy 안하기 때문
-      array2.append(4)
-    
-      print(address: array2)
-      // 0x7f8a90c04fc0 -> reference 바뀜
-      // 요소 추가로 다른 reference 추가되어 copy 수행
-    
-      //isKnownUniquelyReferenced(&<#T##object: T?##T?#>) 
-      // swift optimization tips 참조
-    
-    ```
+- *Example*
 
-    custom value type에 이런 behavior 구현 가능
+    {% highlight javascript %}
     
-    &nbsp;
+    // memory address 출력하기 위한 함수
+    func print(address o : UnsafeRawPointer) {
+      print(String(format: "%p", Int(bitPattern: o)))
+    }
+    
+    var array1: [Int] = [1,2,3]
+    var array2 = array1
+    
+    print(address: array1)
+    print(address: array2)
+    // 0x7f8a90f194a0 
+    // 0x7f8a90f194a0 
+    // 두 배열 reference 가 같다
+    // uniquely referenced라면 copy 안하기 때문
+    
+    array2.append(4)
+    print(address: array2)
+    // 0x7f8a90c04fc0 -> reference 바뀜
+    // 요소 추가로 다른 reference 추가되어 copy 수행
+    
+    {% endhighlight %}
+    
+    
+    
+- 처음엔 같은 array instance 참조. *복사 안함*
+    - array2 에 element 추가 → 두 개의 reference → 새로운 element 추가 전에 memory 에 새로 복사한 뒤에 추가됨.
+
+&nbsp;
+
+- custom value type에 이런 behavior 구현 가능
+  - [Writing High-Performance Swift Code - The cost of large Swift values](https://github.com/apple/swift/blob/master/docs/OptimizationTips.rst#advice-use-copy-on-write-semantics-for-large-values)
+
+&nbsp;
 
 swift docs - Structure & Class - value type에서 관련 설명 나옴
 
@@ -70,6 +83,6 @@ swift docs - Structure & Class - value type에서 관련 설명 나옴
 ### :pushpin: Reference
 
 - [Understanding Swift Copy-on-Write mechanisms](https://medium.com/@lucianoalmeida1/understanding-swift-copy-on-write-mechanisms-52ac31d68f2f)
-- [apple/swift](https://github.com/apple/swift/blob/master/docs/OptimizationTips.rst#advice-use-inplace-mutation-instead-of-object-reassignment)
+- [Writing High-Performance Swift Code](https://github.com/apple/swift/blob/master/docs/OptimizationTips.rst)
 
 &nbsp;
