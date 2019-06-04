@@ -1,0 +1,4 @@
+[ARC Release Note](https://developer.apple.com/library/archive/releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html)
+
+[Swift language guide - ARC](https://docs.swift.org/swift-book/LanguageGuide/AutomaticReferenceCounting.html)
+

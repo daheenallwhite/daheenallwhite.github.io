@@ -1,0 +1,1 @@
+[slide link](https://prezi.com/obkhqdxaz3zx/programming-compile-loading-for-korean/)
