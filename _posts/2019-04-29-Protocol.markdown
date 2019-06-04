@@ -293,9 +293,9 @@ lightSwitch.toggle()
 _Protocol as Types_
 
 - protocol은 안에 실제 구현은 없지만 독립적으로 사용할 수 있는 type이다. (fully-fledged type)
-
 - type 사용되는 곳에 protocol도 사용 가능함
 - protocol을 사용하는 이유를 뒷받침 하는 특성
+- *existential type : there exists a type T such that T conforms to the protocol*
 
 &nbsp;
 
