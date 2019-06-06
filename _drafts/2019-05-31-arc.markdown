@@ -2,3 +2,5 @@
 
 [Swift language guide - ARC](https://docs.swift.org/swift-book/LanguageGuide/AutomaticReferenceCounting.html)
 
+https://www.raywenderlich.com/966538-arc-and-memory-management-in-swift
+
