@@ -4,3 +4,82 @@
 
 https://www.raywenderlich.com/966538-arc-and-memory-management-in-swift
 
+
+
+WWDC
+
+[2018 - swift generics](https://developer.apple.com/videos/play/wwdc2018/406/) 
+
+[2015 - Building Better Apps with Value Types in Swift](https://developer.apple.com/videos/play/wwdc2015/414/)
+
+[2015 - Optimizing Swift Performance](https://developer.apple.com/videos/play/wwdc2015/409)
+
+[2016 - Understanding Swift Performance](https://developer.apple.com/videos/play/wwdc2016/416/)
+
+
+
+swift generics manifesto
+
+https://github.com/apple/swift/blob/master/docs/GenericsManifesto.md#opening-existentials
+
+
+
+stack 메모리는 스택 구조로 함수를 호출하고
+
+해당 함수 호출이 끝나면 지역변수, 인자를 위한 공간인 스택 프레임을 삭제함
+
+이전 context로 돌아감
+
+
+
+가비지 컬렉터는 실행시간에 실시간으로 돌아다님
+
+자원 낭비. 시간 더 오래 걸림
+
+
+
+ARC 코드에 이 때 객체는 사라져야 돼
+
+컴파일 타임에 이미 언제 없어져야 되는지 알고 있음
+
+
+
+ARC 는 가장 큰 단점에 영원히 존재하는 인스턴스가 생길 가능성
+
+
+
+valute type은 신경쓸게 많지 않음
+
+
+
+메모리 관련 instrument tool - allocation
+
+메모리에 어떻게 인스턴스가 할당되는지 볼 수 있음
+
+
+
+메모리에서 당장 필요 없으면 공간 해제를 해달라
+
+```swift
+autoreleasepool {
+	// 메모리가 많이 필요로 하는 코드
+	// 할당 해제 가능할 수 있는...
+}
+
+for _ in 0...1000000 {
+  autoreleasepool {
+    // 엄청 큰 사진 파일을 계속해서 fetch 해옴
+  }
+}
+```
+
+당장 잘 모르겠는 경우엔 autoreleasepool 일단 사용해보자
+
+
+
+Swift 는 MRC 사용 불가
+
+NSObject를 상속받은 obj-c 객체는 사용 가능
+
+
+
