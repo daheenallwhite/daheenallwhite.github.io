@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Protocol doent's conform to itself - protocol 은 자기자신을 준수하지 않는다"
+title:  "Protocol doesn't conform to itself - protocol 은 자기자신을 준수하지 않는다"
 date:  2019-06-07 17:30:59
 author: Dana Lee
 categories: Swift
