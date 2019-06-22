@@ -8,8 +8,6 @@ tags: [Swift, Copy on Write, Value type]
 cover:  "/assets/instacode.png"
 ---
 
-
-
 # Copy-On-Write (COW)
 
 Swift value type 은 함수에 값을 넘기거나, 프로퍼티에 저장할 때, 한 인스턴스를 공유하지 않고, 복사하여 사용한다. 
@@ -65,6 +63,7 @@ Swift value type 은 함수에 값을 넘기거나, 프로퍼티에 저장할 �
     
     
 - 처음엔 같은 array instance 참조. *복사 안함*
+  
     - array2 에 element 추가 → 두 개의 reference → 새로운 element 추가 전에 memory 에 새로 복사한 뒤에 추가됨.
 
 &nbsp;
