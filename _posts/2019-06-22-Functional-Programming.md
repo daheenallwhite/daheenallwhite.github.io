@@ -41,6 +41,8 @@ cover:  "/assets/instacode.png"
 
 반면에 **명령형**은 상태의 변화를 통해 흐름을 제어하는 방식이다. 명령형은 다시 순차적인 처리를 통해 문제를 해결하는 방식인 **절차형**과, 객체간의 상호작용(메세지)를 이용하는 **객체지향**으로 나뉜다.
 
+### 차이?
+
 많은 글에서 함수형과 명령형의 차이를 다음과 같이 설명한다
 
 > Declarative(Functional) : what to do - ***무엇을*** 하는지 알려준다 <br>Imperative                    : how to do - **어떻게** 하는지 알려준다.
@@ -52,6 +54,8 @@ Imperative 의 단어 뜻을 보면 command, instruction 의 느낌이 나는데
 명령형에서는 프로그램에서 어떤 일을 하려면 그것을 <u>어떻게 하는지 방법을 알려줘야 했다</u>. n번 반복해서 출력을 해야한다면, 반복문을 돌리고, 그안에 출력함수를 부르고, 이 전체 흐름을 한 함수로 감싸서 프로그램에 선언하고 사용한다.
 
 함수형에서는 이 어떻게 하는지를 설명한 **방법**(함수) 가 변수에 담길 수 있다. 따라서 그 방법이 담긴 변수가 무엇인지만 명시해주면 된다. 
+
+&nbsp;
 
 #### *Example* : 특정 함수를 n번 반복해서 실행하는 프로그램
 
@@ -96,12 +100,12 @@ repeat(n) { print("count: \($0)")}
 
 ## 왜 functional programming 이 필요할까?
 
-- Concurrency (동시성)
+- **Concurrency (동시성)** - 기존의 문제 해결
   - 상태 값을 허용한다면, 한 instance 에 대해 여러 thread 가 접근할 경우, data 무결성을 보장할 수 없다. (*무결성: 데이터의 정확성과 일관성을 유지/보증하는 특성)
   - 이를 위해 lock 같은 기법을 사용 → performance 저하, 복잡도 증가
   - 원인은 상태 값의 변경을 허용하기 때문 (mutable)
   - functional programming 의 immutable 특성(데이터 변경 불가능)이 cuncurrency 관련 문제 원천 봉쇄
-- 코드의 간결함
+- **코드의 간결함**
   - 함수는 입력과 출력뿐. 내부에 상태값을 가지고 있지 않음. no side effect
   - First class, higher order function - 함수도 변수에 할당하고, 인자나 리턴값으로 사용가능
 
@@ -166,7 +170,7 @@ anonymous function - 이름 없는 함수라는 뜻이다. swift 에서는 closu
 
 주로 higher order function에 넘길 때, 한번 사용할 목적으로 만든다. 클로져는 함수를 포함하는 개념이다.
 
-
+&nbsp;
 
 ### :pencil2: First Class Fuction (일급 객체)
 
@@ -195,8 +199,6 @@ anonymous function - 이름 없는 함수라는 뜻이다. swift 에서는 closu
 
 higher order function 은 first order function 보다 더 추상화 된 개념이라고 생각한다. first order function 은 인자로, 반환값으로 함수를 받지 못하는 함수를 말한다. fist order 에서 함수를 추상화할 수 있으면 higher order 이 된다.
 
-&nbsp;
-
 #### higher order function 왜 사용될까?
 
 크게 두가지 이유라고 생각한다.
@@ -205,7 +207,7 @@ higher order function 은 first order function 보다 더 추상화 된 개념�
    how to 에 대한 것도 추상화를 해버린다.
 2. Immutable 특성에 기인 - 값을 변경할 수 없으니, 데이터 변환이 필요할 땐, map, filter 함수로 복사본을 반환하도록..
 
-
+&nbsp;
 
 ### :pencil2: lazy evaluation
 
