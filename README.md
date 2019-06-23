@@ -8,7 +8,7 @@ This blog is for archiving what I learn every day. The posts are usally about iO
 
 ## :wrench: Setting up the first jekyll blog
 
-#### Theme [centrarium](https://github.com/bencentra/centrarium)
+#### Theme -  [Lanyon](https://github.com/poole/lanyon)
 
 &nbsp;
 
@@ -88,6 +88,44 @@ This blog is for archiving what I learn every day. The posts are usally about iO
 
     - `post.html` 참조함
     - `site.tags` 로 변수만 수정
+
+15. Theme 교체 - [**Lanyon**](https://github.com/poole/lanyon) *(06.23.2019)*
+
+    - 수정하지 않아야 할 것 : `_post`, `_draft` directory
+    - google analytics 관련 파일 : `ga.html`, `sitemap.xml`, `google….html`, `robots.txt`
+    - 중복되지만 원래 파일로 사용할 것(주로 커스텀 관련) : `about.md`, `favicon.io`
+
+16. `_config.yml` custom
+
+    - google track id
+    - paginator
+    - 그외 내 정보로 수정할 것들..
+
+17. archive page 추가
+
+    - tags : [참조사이트](https://github.com/lanyonm/lanyonm.github.io)
+      - `tags.html` 
+      - tag 관련 css style
+    - posts : [centrarium](https://github.com/bencentra/centrarium) 참조 (수정 예정)
+      - `posts.html`
+      - `_layout/archive.html`, `_includes/page_divider.html`
+
+18. **jemoji** plugin 추가 & style 조정
+
+    - `public/css/poole.css`
+    - `<img>` tag 안에 `emoji` class 로 들어가 있음
+    - 기존 스타일 + `margin` 속성이 아래 1rem 있길래 없앰
+
+    ```css
+    .emoji {
+      display: inline;
+      border-radius: 0px;
+      width: auto;
+      margin: 0
+    }
+    ```
+
+    
 
 &nbsp;
 
