@@ -2,7 +2,18 @@
 layout: default
 title: Home
 ---
+<div id="home">
+    <h1>All Posts</h1>
+    <ul class="posts">
+      {% for post in site.posts %}
+         
+        <li><a href="{{ post.url }}">{{ post.title }}</a><span class="entry-date"> &raquo; {{ post.date | date: "%B %d, %Y" }}</span></li>
+        
+      {% endfor %}
+    </ul>
+  </div>
 
+<!--
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
@@ -34,5 +45,5 @@ title: Home
   {% else %}
     <span class="pagination-item newer">Newer</span>
   {% endif %}
-</div>
+</div> -->
 
