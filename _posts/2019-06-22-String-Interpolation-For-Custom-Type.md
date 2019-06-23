@@ -56,7 +56,7 @@ swift 5.0 부터는 이 StringInterpolation 기능이 강화되었다고 한다.
 
 &nbsp;
 
-##Custom Type 에서 string interpolation 사용 방법
+## Custom Type 에서 string interpolation 사용 방법
 
 1. `String.StringInterpolation` 확장해서 custom type 을 위한 로직 구현
 
