@@ -13,8 +13,8 @@ permalink:           pretty
 
 # Setup
 title:               all white cheat sheet
-tagline:             ''
-description:         '#iOS #Swift #CleanCode <br>나의 부족함을 아는 것은 나를 더 나아지게 할 수 있다'
+tagline:             ' Dana&rsquo;s Swifty Life'
+description:         'Dana Daheen Lee<br>#iOS #Swift #CleanCode #Programming'
 url:                 http://daheenallwhite.github.io
 baseurl:             ''
 paginate:            5
