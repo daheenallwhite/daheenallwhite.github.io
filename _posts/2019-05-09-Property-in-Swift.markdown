@@ -4,7 +4,7 @@ title:  "Property in Swift"
 date:   2019-05-09 00:17:00
 author: Dana Lee
 categories: Swift 
-tags:    property stored computed type
+tags: [Stored Property, Computed Property, Property Observers, Type Property]
 cover:  "/assets/instacode.png"
 ---
 
