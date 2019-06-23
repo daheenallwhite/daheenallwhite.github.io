@@ -1,18 +1,14 @@
 # Daheen's Journey to iOS developer :airplane:
 
-This blog is for archiving what I learn every day. The posts are usally about iOS contents including Swift, HIG, Xcode, and often programming generals such as Design Pattern, Algorithm, and so on.
-
-&nbsp;
-
-&nbsp;
-
-## :wrench: Setting up the first jekyll blog
+This blog is for archiving what I learn every day. The posts are usally about iOS including Swift, HIG, Xcode, and often programming generals such as Design Pattern, Algorithm, and so on.
 
 #### Theme -  [Lanyon](https://github.com/poole/lanyon)
 
+&nbsp; 
+
 &nbsp;
 
-#### Custom Setting
+## :wrench: Custom Setting Log 
 
 1. 초기 설정 - config, theme, remote 등등...
 
@@ -72,7 +68,8 @@ This blog is for archiving what I learn every day. The posts are usally about iO
 
 11. google 검색 추가 (2019.05.21)
 
-    - sitemap.xml 추가
+    - `sitemap.xml` , `_includes/ga.html` 추가
+    - `_layouts/default.html` 에 `</body>` 전에 `{% include ga.html}` 추가
     - [참조 사이트](https://wayhome25.github.io/etc/2017/02/20/google-search-sitemap-jekyll/)
     - [참조 사이트](https://gmlwjd9405.github.io/2017/10/20/include-blog-in-a-GoogleSearchEngine.html)
     
@@ -93,6 +90,7 @@ This blog is for archiving what I learn every day. The posts are usally about iO
 
     - 수정하지 않아야 할 것 : `_post`, `_draft` directory
     - google analytics 관련 파일 : `ga.html`, `sitemap.xml`, `google….html`, `robots.txt`
+      - 
     - 중복되지만 원래 파일로 사용할 것(주로 커스텀 관련) : `about.md`, `favicon.io`
 
 16. `_config.yml` custom
@@ -135,5 +133,5 @@ This blog is for archiving what I learn every day. The posts are usally about iO
 
 - GitHub badges
   - [shields.io](https://github.com/badges/shields)
-- <s>draft 사용해보기</s>
-- <s>Tag archive page</s>
+- <s>draft 사용해보기</s> :ballot_box_with_check:
+- <s>Tag archive page</s> :ballot_box_with_check:
