@@ -4,8 +4,6 @@ This blog is for archiving what I learn every day. The posts are usally about iO
 
 #### Theme -  [Lanyon](https://github.com/poole/lanyon)
 
-&nbsp; 
-
 &nbsp;
 
 ## :wrench: Custom Setting Log 
@@ -90,7 +88,6 @@ This blog is for archiving what I learn every day. The posts are usally about iO
 
     - 수정하지 않아야 할 것 : `_post`, `_draft` directory
     - google analytics 관련 파일 : `ga.html`, `sitemap.xml`, `google….html`, `robots.txt`
-      - 
     - 중복되지만 원래 파일로 사용할 것(주로 커스텀 관련) : `about.md`, `favicon.io`
 
 16. `_config.yml` custom
