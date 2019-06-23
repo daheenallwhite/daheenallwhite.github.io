@@ -166,6 +166,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   color: #fff;
 }
+
+.sidebar .social-icons a {
+  color: rgba(255, 255, 255, 0.6);
+  padding-right: 0.75em;
+  padding-right: 0.5em;
+}
+
+
 .sidebar-item {
   padding: 1rem;
 }
