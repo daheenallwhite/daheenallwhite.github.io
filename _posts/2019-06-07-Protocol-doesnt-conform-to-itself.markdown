@@ -20,7 +20,7 @@ protocol 과 generic을 사용하면서 겪은 문제에 대해 내 나름대로
 
 이 문제에 대해 깔끔하게 정리해놓은 글을 발견했다.
 
-[Protocols Sidebar I: Protocols Are Nonconformists]([http://robnapier.net/nonconformist](http://robnapier.net/nonconformist))
+[Protocols Sidebar I: Protocols Are Nonconformists](http://robnapier.net/nonconformist)
 
 관련되어서 궁금했던 모든 질문들에 대한 답이었다. 이 블로그의 protocol 관련된 다른 글도 좋다
 
