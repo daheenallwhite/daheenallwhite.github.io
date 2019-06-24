@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "CustomStringConvertibla protocol - description 바꾸고 싶을 때 사용하는 protocol"
+title:  "CustomStringConvertible protocol - description 바꾸고 싶을 때 사용하는 protocol"
 date:   2019-05-08 22:47:00
 author: Dana Lee
 categories: Swift 
