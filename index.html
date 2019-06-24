@@ -4,9 +4,9 @@ title: Home
 ---
 <div id="home">
     <img src="{{ site.url }}/assets/logo.png" title="Profile Picture" class="profile">
-    <h1>All Posts</h1>
+    <h1>Recent Posts</h1>
     <ul class="posts">
-      {% for post in site.posts %}
+      {% for post in site.posts limit:10 %}
          
         <li><a href="{{ post.url }}">{{ post.title }}</a><span class="entry-date"> &raquo; {{ post.date | date: "%B %d, %Y" }}</span></li>
         
