@@ -269,5 +269,7 @@ class func jsonObject(with: InputStream, options: JSONSerialization.ReadingOptio
 
 - [ZeddiOS 블로그 - 왕초보를 위한 JSON parsing 2](https://zeddios.tistory.com/148)
 - Apple Developer Documentation
+- [swift source code - JSONEncoder](https://github.com/apple/swift-corelibs-foundation/blob/master/Foundation/JSONEncoder.swift)
+- [swift source code - JSONSerialization](https://github.com/apple/swift-corelibs-foundation/blob/master/Foundation/JSONSerialization.swift)
 
 &nbsp;
