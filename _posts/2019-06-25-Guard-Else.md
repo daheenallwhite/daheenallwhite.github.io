@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Swift] guard elese statement 완전 정복"
+title:  "[Swift] guard else statement 완전 정복"
 date:  2019-06-25 17:59:59
 author: Dana Lee
 categories: Swift
@@ -152,4 +152,3 @@ print("\(id)") // ok
 - [Swift Language Guide - Control Flow](https://docs.swift.org/swift-book/LanguageGuide/ControlFlow.html#ID525)
 - [Swift Language Guide - Optionals](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html#ID330)
 
-&nbsp;
