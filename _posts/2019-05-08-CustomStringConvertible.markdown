@@ -4,11 +4,9 @@ title:  "CustomStringConvertible protocol - description 바꾸고 싶을 때 사
 date:   2019-05-08 22:47:00
 author: Dana Lee
 categories: Swift 
-tags:    protocol CustomStringConvertible description Swift 
+tags:    [Protocol, CustomStringConvertible, description] 
 cover:  "/assets/instacode.png"
 ---
-
-# CustomStringConvertible protocol 
 
 **_description을 바꾸고 싶을 때 사용하는 protocol_**
 
