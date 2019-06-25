@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Swift JSON 관련 라이브러리 - JSONSerialization, JSONEncoder, JSONDecoder, Codable"
+title:  "Swift Foundation JSON 관련 클래스ㅡ - JSONSerialization, JSONEncoder, JSONDecoder, Codable"
 date:  2019-06-25 16:54:59
 author: Dana Lee
 categories: Swift
 tags: [JSON, JSONSerialization, JSONEncoder, JSONDecoder, Codable]
 ---
 
-*Swift Foundation 프레임워크에서 제공하는 JSON 관련 라이브러리*
+*Swift Foundation 프레임워크에서 제공하는 JSON 관련 클래스*
 
-크게 3가지 파트로 나누어진다.
+크게 3가지 파트로 나눌 수 있다.
 
 - JSON 데이터를 담을 자료구조 - Data
 - JSON 데이터로 변환될 수 있는 instance type 조건 - Codable protocol
