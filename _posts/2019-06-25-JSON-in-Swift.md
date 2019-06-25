@@ -80,15 +80,15 @@ struct Data
 
 ---
 
-## JSONEncode, JSONDecoder
+## JSONEncode,  JSONDecoder
 
 Encode : 암호화한다. 변환한다. / Decode : 해독한다. 푼다
 
-| JSONEncoder    | instance → JSON     |
-| -------------- | ------------------- |
-| **JSONEcoder** | **JSON → instance** |
+| JSONEncoder     | JSONDecoder     |
+| --------------- | --------------- |
+| instance → JSON | JSON → instance |
 
-
+&nbsp;
 
 ### JSONEncooder
 
