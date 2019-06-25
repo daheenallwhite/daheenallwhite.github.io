@@ -23,7 +23,7 @@ Foundation 에서는 JSON 데이터를 그에 맞는 object로 변환하고, 다
 
 이 클래스들을에게 일을 맡기기 위해서는 JSON 을 전달해야 한다. JSON 데이터를 그냥 `String` 에 담아서 보내면 될까?
 
-정답은 아니다. <u>JSON 데이터는 `Data` 라는 struct 에 담겨서 전달된다</u>. `String` 을 사용하지 않는다.
+정답은 **NO! 아니다**. :star: JSON 데이터는 `Data` 라는 struct 에 담겨서 전달된다. :star: `String` 을 사용하지 않는다.
 
 ```json
 {
@@ -60,7 +60,7 @@ struct Data
 
   - 변형이 필요한 때 == 한 개 이상의 string 이 같은 버퍼를 사용할 때
 
-- String -> Data, Data -> String 가능
+- String :left_right_arrow: Data 가능
 
 - `String` 은 `NSString` 과 bridged 됨
 
@@ -213,7 +213,7 @@ typealias Codable = Encodable & Decodable
 class JSONSerialization : NSObject
 ```
 
-JSON ←→Foundation objects : 양방향 변환 가능
+JSON :left_right_arrow: Foundation objects : 양방향 변환 가능
 
 
 
