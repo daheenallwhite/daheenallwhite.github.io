@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Swift Foundation JSON 관련 클래스ㅡ - JSONSerialization, JSONEncoder, JSONDecoder, Codable"
+title:  "Swift Foundation JSON 관련 클래스 - JSONSerialization, JSONEncoder, JSONDecoder, Codable"
 date:  2019-06-25 16:54:59
 author: Dana Lee
 categories: Swift
