@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Protocol 상속 - 채택한 type 을 상위 protocol로 downcasting 할 수 없다"
+title:  "Protocol 상속 - 하위 protocol 준수하면 상위 protocol도 준수하는걸까?"
 date:  2019-06-26 20:13:59
 author: Dana Lee
 categories: Swift
