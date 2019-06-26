@@ -4,7 +4,7 @@ title:  "Difference Between Value type and Reference type in Swift"
 date:   2019-04-29 13:19:00
 author: Dana Lee
 categories: Swift
-tags:    [Swift, ValueType ReferenceType]
+tags:    [Value type, Reference type]
 cover:  "/assets/instacode.png"
 ---
 
