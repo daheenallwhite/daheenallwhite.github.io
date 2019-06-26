@@ -4,7 +4,7 @@ title:  "Swift CharacterSet 으로 입력 문자열 검사하기 (Checking Input
 date:   2019-05-01 13:19:00
 author: Dana Lee
 categories: Swift 
-tags:    [CharacterSet, Swift]
+tags:    CharacterSet
 lastmod : 2019-06-26 20:13:59
 sitemap :
   changefreq : weekly
