@@ -4,7 +4,7 @@ title:  "Copy On Write in Swift - Value Type 은 매번 복사하지 않는다"
 date:   2019-06-04 23:30:59
 author: Dana Lee
 categories: Swift
-tags: [Swift, Copy on Write, Value type]
+tags: [Swift, Copy On Write, Value type]
 cover:  "/assets/instacode.png"
 ---
 
