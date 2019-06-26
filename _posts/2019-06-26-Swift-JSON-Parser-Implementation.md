@@ -18,7 +18,7 @@ tags: [JSON, JSON parser]
 4. 토큰 파싱 : `Parser` - 재귀 호출로 구현
 5. 출력 : `OutputView` - 모든 출력을 담당하는 구조체
 
-
+&nbsp;
 
 ### 그외 유틸리티
 
@@ -30,7 +30,7 @@ tags: [JSON, JSON parser]
 - `JSONSymbols` : json 에서 사용되는 기호를 담은 struct
 - `StringInterpolation` : string interpolation `appendInterpolation()` extend
 
-
+&nbsp;
 
 ### JSON 데이터 담을 자료구조
 
@@ -44,17 +44,19 @@ tags: [JSON, JSON parser]
 
 이 타입들은 `TypeCountable` protocol 을 구현해서 그 안의 element 를 반환한다.
 
-
+---
 
 ## uml
 
 ![]({{site.url}}/assets/post-image/jsonparser-class-diagram.png)
 
-
+---
 
 ## source code
 
  [📎 swift jsonparser](https://github.com/daheenallwhite/swift-jsonparser/tree/daheenallwhite/JSONParser)
+
+---
 
 
 
@@ -122,7 +124,7 @@ dictionary[key: key, default: defaultValue] // 이렇게 씀
 
 > Accesses the value with the given key. If the dictionary doesn’t contain the given key, accesses the provided default value as if the key and default value existed in the dictionary. ([documentation](https://developer.apple.com/documentation/swift/dictionary/2894528-subscript))
 
-
+&nbsp;
 
 ### 다형성(Polymorphism) 이용한 JSON 포맷대로 출력하기
 
