@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "[Swift] Type Casting 타입캐스팅 - is, as"
-date:  2019-06-25 17:59:59
+title:  "[Swift] Type Casting - is & as"
+date:  2019-06-26 13:08:59
 author: Dana Lee
 categories: Swift
-tags: [Type Casting, is, as, as?, as!, Any, AnyObject]
+tags: [Type Casting, is, as, Any, AnyObject]
 ---
 
 
