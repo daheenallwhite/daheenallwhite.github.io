@@ -39,3 +39,5 @@ jekyll-archives:
   permalinks:
     category: '/category/:name/'
     
+
+future: true
