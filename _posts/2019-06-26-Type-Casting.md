@@ -233,4 +233,3 @@ tags: [Type Casting, is, as, Any, AnyObject]
 
 [Swift Language Guide - Type Casting](https://docs.swift.org/swift-book/LanguageGuide/TypeCasting.html)
 
-&nbsp;
