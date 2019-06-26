@@ -4,8 +4,11 @@ title:  "Initializer (2) : It's All Because of Inheritance in Class"
 date:   2019-05-29 03:14:59
 author: Dana Lee
 categories: Swift
-tags: Initializer Swift inheritance
-cover:  "/assets/post-image/class-init-type.png"
+tags: [Initializer, Initializer Inheritance]
+lastmod : 2019-06-26 20:13:59
+sitemap :
+  changefreq : weekly
+  priority : 1.0
 ---
 
 

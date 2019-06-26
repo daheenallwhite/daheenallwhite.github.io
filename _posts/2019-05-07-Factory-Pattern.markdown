@@ -3,9 +3,12 @@ layout: post
 title:  "Factory Pattern : Factory Method, Abstract Factory, Factory Pattern in Swfit"
 date:   2019-05-07 19:19:00
 author: Dana Lee
-categories: Swift 
-tags:    FactoryPattern Swift 
-cover:  "/assets/instacode.png"
+categories: [Design Pattern]
+tags:    [Factory Pattern]  
+lastmod : 2019-06-26 20:13:59
+sitemap :
+  changefreq : weekly
+  priority : 1.0
 ---
 # Factory Pattern :factory:
 

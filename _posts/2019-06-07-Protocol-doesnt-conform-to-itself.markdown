@@ -4,8 +4,11 @@ title:  "Protocol doesn't conform to itself - protocol 은 자기자신을 준�
 date:  2019-06-07 17:30:59
 author: Dana Lee
 categories: Swift
-tags: [Swift, Protocol, Protocol Witness Table, Generic Where, troubleshooting]
-cover:  "/assets/instacode.png"
+tags: [Protocol, Protocol Witness Table, Generic Where, troubleshooting]
+lastmod : 2019-06-26 20:13:59
+sitemap :
+  changefreq : weekly
+  priority : 1.0
 ---
 
 

@@ -4,8 +4,11 @@ title:  "ObjectIdentifier protocol : object identity 비교하기"
 date:   2019-05-31 15:44:59
 author: Dana Lee
 categories: Swift
-tags: [ObjectIdentifier, Swift, identity operator]
-cover:  "/assets/instacode.png"
+tags: [ObjectIdentifier, identity]
+lastmod : 2019-06-26 20:13:59
+sitemap :
+  changefreq : weekly
+  priority : 1.0
 ---
 
 

@@ -4,8 +4,11 @@ title:  "Debugging with Xcode and LLDB"
 date:   2019-04-22 15:45:59
 author: Dana Lee
 categories: Swift
-tags: Debugging Xcode LLDB
-cover:  "/assets/instacode.png"
+tags: [Debugging, Xcode, LLDB]
+lastmod : 2019-06-26 20:13:59
+sitemap :
+  changefreq : weekly
+  priority : 1.0
 ---
 # Debugging with Xcode and LLDB
 

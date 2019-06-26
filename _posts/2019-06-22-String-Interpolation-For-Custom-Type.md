@@ -4,8 +4,11 @@ title:  "String Interpolation for Custom Type - Custom Type 에 맞는 문자열
 date:  2019-06-22 13:24:59
 author: Dana Lee
 categories: Swift
-tags: [Swift, StringInterpolation]
-cover:  "/assets/instacode.png"
+tags: StringInterpolation
+lastmod : 2019-06-26 20:13:59
+sitemap :
+  changefreq : weekly
+  priority : 1.0
 ---
 
 # String Interpolation

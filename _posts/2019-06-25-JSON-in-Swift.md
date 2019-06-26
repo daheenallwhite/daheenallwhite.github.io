@@ -5,6 +5,10 @@ date:  2019-06-25 16:54:59
 author: Dana Lee
 categories: Swift
 tags: [JSON, JSONSerialization, JSONEncoder, JSONDecoder, Codable]
+lastmod : 2019-06-26 20:13:59
+sitemap :
+  changefreq : weekly
+  priority : 1.0
 ---
 
 *Swift Foundation 프레임워크에서 제공하는 JSON 관련 클래스*

@@ -3,9 +3,12 @@ layout: post
 title:  "SOLID Principles"
 date:   2019-05-16 18:40:59
 author: Dana Lee
-categories: [Programming, OOP, SOLID principles]
-tags: SOLID OOP CRC object indirection
-cover:  "/assets/SOLID.png"
+categories: [Programming, OOP]
+tags: [SOLID, OOP, CRC, indirection]
+lastmod : 2019-06-26 20:13:59
+sitemap :
+  changefreq : weekly
+  priority : 1.0
 ---
 
 # SOLID principles 

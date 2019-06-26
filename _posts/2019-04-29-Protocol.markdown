@@ -4,8 +4,11 @@ title:  "Protocol in Swift : 자격요건 명시하는 역할"
 date:   2019-04-29 13:19:00
 author: Dana Lee
 categories: Swift
-tags:    Protocol Extension 
-cover:  "/assets/instacode.png"
+tags:    [Protocol, Extension ]
+lastmod : 2019-06-26 20:13:59
+sitemap :
+  changefreq : weekly
+  priority : 1.0
 ---
 ### :pushpin: Table Of Contents
 

@@ -4,8 +4,11 @@ title:  "Swift CharacterSet 으로 입력 문자열 검사하기 (Checking Input
 date:   2019-05-01 13:19:00
 author: Dana Lee
 categories: Swift 
-tags:    CharacterSet Swift
-cover:  "/assets/instacode.png"
+tags:    [CharacterSet, Swift]
+lastmod : 2019-06-26 20:13:59
+sitemap :
+  changefreq : weekly
+  priority : 1.0
 ---
 # Checking Input String by Using CharacterSet
 
@@ -49,8 +52,9 @@ _입력 문자열에 포함되면 안되는 문자열이 있는지 검사하기 
 
 - ` validCharacterSet.isSuperset(of: inputCharacterSet)` : 체크하는 핵심 메소드
   
+
 (`validCharacterSet` 에 `inputCharacterSet이` 부분집합으로 포함되어야 한다.)
-  
+
   ```swift
   //입력 가능한 문자만 있는 set
   var validCharacterSet: CharacterSet = CharacterSet(charactersIn: "(,)")

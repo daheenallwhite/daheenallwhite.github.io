@@ -4,8 +4,11 @@ title:  "Functional Programming - 함수형 프로그래밍 : what to do 를 알
 date:  2019-06-22 13:24:59
 author: Dana Lee
 categories: Swift
-tags: [Swift, Functional Programming, side effect, higher order function, pure function]
-cover:  "/assets/instacode.png"
+tags: [Functional Programming, side effect, higher order function, pure function]
+lastmod : 2019-06-26 20:13:59
+sitemap :
+  changefreq : weekly
+  priority : 1.0
 ---
 
 # Functional Programming

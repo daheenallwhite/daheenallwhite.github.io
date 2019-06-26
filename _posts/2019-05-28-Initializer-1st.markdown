@@ -4,8 +4,11 @@ title:  "Initializer (1) : Get Ready for New Instance! "
 date:   2019-05-28 21:37:59
 author: Dana Lee
 categories: Swift
-tags: Initializer Swift
-cover:  "/assets/instacode.png"
+tags: Initializer
+lastmod : 2019-06-26 20:13:59
+sitemap :
+  changefreq : weekly
+  priority : 1.0
 ---
 
 

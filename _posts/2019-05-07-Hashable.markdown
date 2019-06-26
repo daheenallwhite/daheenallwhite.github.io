@@ -5,7 +5,10 @@ date:   2019-05-07 22:01:00
 author: Dana Lee
 categories: Swift 
 tags:    Set Hashable Hasher hash Swift 
-cover:  "/assets/instacode.png"
+lastmod : 2019-06-26 20:13:59
+sitemap :
+  changefreq : weekly
+  priority : 1.0
 ---
 
 

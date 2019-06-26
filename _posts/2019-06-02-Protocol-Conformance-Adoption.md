@@ -4,8 +4,11 @@ title:  "Swift 프로토콜 준수와 채택의 차이 : Difference between Conf
 date:   2019-06-02 16:59:59
 author: Dana Lee
 categories: Swift
-tags: Swift Protocol Adoption Conformance
-cover:  "/assets/post-image/protocol-adoption-conformance.png"
+tags: [Protocol, Adoption, Conformance]
+lastmod : 2019-06-26 20:13:59
+sitemap :
+  changefreq : weekly
+  priority : 1.0
 ---
 
 

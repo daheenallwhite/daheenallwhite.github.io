@@ -3,9 +3,12 @@ layout: post
 title:  "한빛미디어 수요밋업 - 머신러닝 핸즈온랩 후기 (MS Azure ML)"
 date:   2019-05-22 21:21:59
 author: Dana Lee
-categories: PersonalLog
-tags: Azure ML Machine-Learning
-cover:  "/assets/instacode.png"
+categories: [Personal Log]
+tags: [Azure,ML, Machine Learning]
+lastmod : 2019-06-26 20:13:59
+sitemap :
+  changefreq : weekly
+  priority : 1.0
 ---
 
 

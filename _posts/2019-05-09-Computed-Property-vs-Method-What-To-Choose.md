@@ -4,8 +4,11 @@ title:  "Computed Property vs Method - What to choose (Computed Property와 Meth
 date:   2019-05-09 00:21:00
 author: Dana Lee
 categories: Swift 
-tags:    [Swift, Computed Property, Method]
-cover:  "/assets/instacode.png"
+tags:    [Computed Property, Method]
+lastmod : 2019-06-26 20:13:59
+sitemap :
+  changefreq : weekly
+  priority : 1.0
 ---
 
 # Computed Property  vs  Method

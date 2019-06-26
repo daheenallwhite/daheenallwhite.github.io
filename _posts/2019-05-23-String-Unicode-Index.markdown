@@ -4,8 +4,11 @@ title:  "String의 구성 - Character, Unicode, Index"
 date:   2019-05-23 15:45:59
 author: Dana Lee
 categories: Swift
-tags: String Swift Unicode-Scalar Index
-cover:  "/assets/post-image/String-Composition.png"
+tags: [String, Unicode Scalar, Index]
+lastmod : 2019-06-26 20:13:59
+sitemap :
+  changefreq : weekly
+  priority : 1.0
 ---
 
 
@@ -78,7 +81,7 @@ swift에서 String을 구성하는 문자는 `Character` type을 사용한다. �
 
 &nbsp;
 
-#### UTF - # #
+#### UTF - #
 
 - UTF 뒤에 붙는 숫자는 인코딩 방식(저장방식)의 차이를 나타낸다.
 - 기본적으로 utf 문자는 32bit(4byte) 크기의 사이즈 안에 표현한다.

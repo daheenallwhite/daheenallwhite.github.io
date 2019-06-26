@@ -5,7 +5,10 @@ date:  2019-06-26 17:48:59
 author: Dana Lee
 categories: Swift
 tags: [JSON, JSON parser]
-
+lastmod : 2019-06-26 20:13:59
+sitemap :
+  changefreq : weekly
+  priority : 1.0
 ---
 
 ## 전체 구조

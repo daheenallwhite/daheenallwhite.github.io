@@ -4,8 +4,11 @@ title:  "HIG : Human Interface Guidlines - 왜 읽어야 할까?"
 date:   2019-06-03 16:59:59
 author: Dana Lee
 categories: Swift
-tags: [HIG, Apple Guideline, App Development, ios]
-cover:  "/assets/instacode.png"
+tags: [HIG, Apple Guideline, App Development, iOS]
+lastmod : 2019-06-26 20:13:59
+sitemap :
+  changefreq : weekly
+  priority : 1.0
 ---
 
 

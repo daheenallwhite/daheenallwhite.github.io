@@ -5,7 +5,10 @@ date:   2019-04-29 13:19:00
 author: Dana Lee
 categories: Swift
 tags:    [Value type, Reference type]
-cover:  "/assets/instacode.png"
+lastmod : 2019-06-26 20:13:59
+sitemap :
+  changefreq : weekly
+  priority : 1.0
 ---
 
 # Difference between Value type and Reference type in iOS Swift

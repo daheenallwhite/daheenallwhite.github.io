@@ -5,7 +5,10 @@ date:   2019-05-08 22:47:00
 author: Dana Lee
 categories: Swift 
 tags:    [Protocol, CustomStringConvertible, description] 
-cover:  "/assets/instacode.png"
+lastmod : 2019-06-26 20:13:59
+sitemap :
+  changefreq : weekly
+  priority : 1.0
 ---
 
 **_description을 바꾸고 싶을 때 사용하는 protocol_**

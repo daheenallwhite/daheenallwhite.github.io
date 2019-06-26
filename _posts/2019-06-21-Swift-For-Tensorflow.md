@@ -4,8 +4,11 @@ title:  "Swift for TensorFlow - TensorFlow 라이브러리를 Swift에서도 사
 date:  2019-06-21 10:33:59
 author: Dana Lee
 categories: Swift
-tags: [Swift, TensorFlow, ML, Machine-Learning]
-cover:  "/assets/instacode.png"
+tags: [TensorFlow, ML, Machine Learning]
+lastmod : 2019-06-26 20:13:59
+sitemap :
+  changefreq : weekly
+  priority : 1.0
 ---
 
 

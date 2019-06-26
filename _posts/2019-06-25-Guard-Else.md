@@ -5,6 +5,10 @@ date:  2019-06-25 17:59:59
 author: Dana Lee
 categories: Swift
 tags: [guard-else, control flow]
+lastmod : 2019-06-26 20:13:59
+sitemap :
+  changefreq : weekly
+  priority : 1.0
 ---
 
 `guard` statement 제대로 알기 :eight_pointed_black_star:

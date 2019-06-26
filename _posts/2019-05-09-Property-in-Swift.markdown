@@ -5,7 +5,10 @@ date:   2019-05-09 00:17:00
 author: Dana Lee
 categories: Swift 
 tags: [Stored Property, Computed Property, Property Observers, Type Property]
-cover:  "/assets/instacode.png"
+lastmod : 2019-06-26 20:13:59
+sitemap :
+  changefreq : weekly
+  priority : 1.0
 ---
 
 # Property

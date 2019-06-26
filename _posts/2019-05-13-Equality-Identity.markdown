@@ -3,9 +3,12 @@ layout: post
 title:  "Equality vs. Identity - Protocol Equatable & Comparable"
 date:   2019-05-13 14:16:00
 author: Dana Lee
-categories: [Swift, Equatable, Comparable]
-tags:    Protocol Extension 
-cover:  "/assets/instacode.png"
+categories: Swift
+tags:    [Protocol, Equatable, Comparable] 
+lastmod : 2019-06-26 20:13:59
+sitemap :
+  changefreq : weekly
+  priority : 1.0
 ---
 
 

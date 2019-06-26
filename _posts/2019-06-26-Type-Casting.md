@@ -5,6 +5,10 @@ date:  2019-06-26 13:08:59
 author: Dana Lee
 categories: Swift
 tags: [Type Casting, is, as, Any, AnyObject]
+lastmod : 2019-06-26 20:13:59
+sitemap :
+  changefreq : weekly
+  priority : 1.0
 ---
 
 
