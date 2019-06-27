@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "무작위로 섞기 알고리즘: Shuffle Algorithm - Fisher-Yates Shuffle & Knuth Shuffle"
+title:  "Shuffle Algorithm : 무작위로 섞기 알고리즘 - Fisher-Yates Shuffle & Knuth Shuffle"
 date:  2019-06-27 19:20:59
 author: Dana Lee
 categories: [Programming, Algorithm]
