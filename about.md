@@ -22,7 +22,7 @@ Bachelor's degree, Economics, Computer Science
 
 :computer:
 
-Java, ABAP, Swift
+Swift, ABAP, Java 
 
 &nbsp;
 
