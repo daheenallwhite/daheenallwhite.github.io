@@ -40,3 +40,7 @@ jekyll-archives:
     
 
 future: true
+
+# disqus 
+disqus:
+  shorname: daheenallwhite.github.io
