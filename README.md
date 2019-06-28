@@ -120,7 +120,10 @@ This blog is for archiving what I learn every day. The posts are usally about iO
     }
     ```
 
-    
+19. comment 기능 추가 - disqus 사용
+
+    - `post.html` - related post 밑에 코드 추가
+    - `_config.yml` - shorname 변수 추가
 
 &nbsp;
 
