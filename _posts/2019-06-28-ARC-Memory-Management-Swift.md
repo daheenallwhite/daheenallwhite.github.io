@@ -5,14 +5,13 @@ date:  2019-06-28 00:16:59
 author: Dana Lee
 categories: [Speaking, Swift]
 tags: [ARC, Memory Management, weak, unowned, reference counting]
-lastmod : 2019-06-28 00:16:59
+lastmod : 2019-06-28 20:07:59
 sitemap :
   changefreq : weekly
-  priority : 1.0
+  priority : 1.5
 ---
 
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/k3KlnJCcBhxH4s" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/LeeDaheen/swift-arc-152213706" title="Swift - ARC와 메모리 관리" target="_blank">Swift - ARC와 메모리 관리</a> </strong> from <strong><a href="https://www.slideshare.net/LeeDaheen" target="_blank">LeeDaheen</a></strong> </div>
-
 ### :pushpin: 목차
 
 1. 메모리 관리의 필요성
