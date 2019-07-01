@@ -15,6 +15,14 @@ sitemap :
 
 ![]({{site.url}}/assets/post-image/Pattern.png)
 
+:pushpin: contents
+
+- for destructing values
+- for full pattern matching
+- Where - 패턴과 결합하여 조건 추가하기
+
+
+
 ## For Destructing Values - 값 추출하는 패턴
 
 ### Wildcard Pattern
@@ -92,7 +100,7 @@ let (a) : Int = 2
 
 &nbsp;
 
-## for full pattern matching
+## For Full Pattern Matching
 
 ### Enumeration Case Pattern
 
@@ -207,6 +215,60 @@ default:
     print("The point is at (\(point.0), \(point.1)).")
 }
 // Prints "The point is at (1, 2)."
+```
+
+&nbsp;
+
+## Where - 패턴과 결합하여 조건 추가하기
+
+```swift
+let tuples = [(1,2), (1,-1), (1,0), (0,2)]
+for tuple in tuples {
+  switch tuple {
+    case let (x,y) where x == y: print("same")
+    case let (x,y) where x == -y: print("minus")
+    case let (x,y) where x>y: print("x is bigger than y")
+    case (1, _): print("x=1")
+    default: print("\(tuple.0),\(tuple.1)")
+  }
+}
+
+let arrayOfOptionalInts : [Int?] = [nil, 2, 3, nil, 5]
+// nil 이 아닌 element 중에 2보다 큰 것
+for case let number? in arrayOfOptionalInts where number > 2 {
+  print ("Found a\(number)")
+}
+//Found a 3
+//Found a 5
+```
+
+```swift
+protocol SelfPrintable {
+  func printByMyself()
+}
+
+struct Person : SelfPrintable { }
+extension Int: SelfPrintable { }
+extension String: SelfPrintable { }
+
+extension SelfPrintable where Self: BinaryInteger, Self: Comparable {
+  func printByMyself() {
+    print("BinaryInteger, Comparable 만족하는 경우만 확장")
+  }
+}
+
+extension SelfPrintable { 
+  func printByMyself() {
+    print("그외 나머지 경우 확장")
+  }
+}
+
+Int(10).printByMyself()
+String("hello").printByMyself()
+Person().printByMyself()
+//BinaryInteger, Comparable 만족하는 경우만 확장
+//그외 나머지 경우 확장
+//그외 나머지 경우 확장
 ```
 
 
