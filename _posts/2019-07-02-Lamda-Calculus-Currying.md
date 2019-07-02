@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "Lamda Calculus and Currying - 함수형 프로그래밍, 람다식, 커링"
-date:  2019-07-03 21:52:59
+date:  2019-07-02 21:52:59
 author: Dana Lee
 categories: Programming
 tags: [Lamda Calculus, Currying, Functional Programming]
-lastmod : 2019-07-03 22:26:59
+lastmod : 2019-07-02 22:26:59
 sitemap :
   changefreq : weekly
   priority : 1.0
