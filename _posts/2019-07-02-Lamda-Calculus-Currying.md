@@ -55,11 +55,11 @@ function with multiple arguments
 
 인자가 여러 개인 함수 → 한개의 매개변수를 가진 함수를 연결해서 표현하기
 
-![](/Users/allwhite/Desktop/blog/daheenallwhite.github.io/_posts/%7B%7Bsite.url%7D%7D/assets/post-image/lamda2.png)
+![]({{site.url}}/assets/post-image/lamda2.png)
 
 한개의 매개변수를 가진 함수는 다시 한개의 매개변수를 가진 function을 리턴한다. 
 
-![](/Users/allwhite/Desktop/blog/daheenallwhite.github.io/_posts/%7B%7Bsite.url%7D%7D/assets/post-image/lamda4.png)
+![]({{site.url}}/assets/post-image/lamda4.png)
 
 &nbsp;
 
@@ -118,7 +118,7 @@ func calculate(_ method: @escaping Method) -> (Int) -> (Int) -> Int {
 calculate(+)(10)(3)
 ```
 
-![](/Users/allwhite/Desktop/blog/daheenallwhite.github.io/_posts/%7B%7Bsite.url%7D%7D/assets/post-image/lamda5.png)
+![]({{site.url}}/assets/post-image/lamda5.png)
 
 &nbsp;
 
@@ -130,7 +130,7 @@ adder(5)(3)
 
 adder는 다시 함수를 반환한다.
 
-![](/Users/allwhite/Desktop/blog/daheenallwhite.github.io/_posts/%7B%7Bsite.url%7D%7D/assets/post-image/lamda6.png)
+![]({{site.url}}/assets/post-image/lamda6.png)
 
 &nbsp;
 
@@ -140,5 +140,4 @@ let adder100 = adder(100)
 adder(3)
 ```
 
-![](/Users/allwhite/Desktop/blog/daheenallwhite.github.io/_posts/%7B%7Bsite.url%7D%7D/assets/post-image/lamda7.png)
-
+![]({{site.url}}/assets/post-image/lamda7.png)
