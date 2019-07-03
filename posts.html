@@ -3,7 +3,7 @@ layout: page
 title: "Posts"
 permalink: /posts/
 ---
-
+<h5>Total Posts : {{ site.posts | size }}</h5>
 {% for category in site.categories %}
   {% capture cat %}{{ category | first }}{% endcapture %}
   <h2 id="{{cat}}">{{ cat  }}</h2>
