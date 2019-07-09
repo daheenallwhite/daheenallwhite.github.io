@@ -46,13 +46,13 @@ Design pattern 책의 부제는 *Elements of Reusable Object-Oriented Software* 
 
 여러가지 디자인 패턴을 크게 다음 세 가지 부류로 나눌 수 있다. 
 
-![]({{site.url}}/assets/post-image/DesignPattern1.png)
+![](https://github.com/daheenallwhite/daheenallwhite.github.io/blob/master/assets/post-image/DesignPattern1.png?raw=true)
 
 여기에 concurrency pattern도 추가되기도 한다. 데이터 lock 과 무결성 관련한 패턴인 것 같다.
 
 각 카테고리에 해당하는 디자인 패턴은 다음과 같다
 
-![]({{site.url}}/assets/post-image/DesignPattern2.png)
+![](https://github.com/daheenallwhite/daheenallwhite.github.io/blob/master/assets/post-image/DesignPattern2.png?raw=true)
 
 ---
 
