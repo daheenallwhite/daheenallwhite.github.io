@@ -6,15 +6,19 @@ permalink: /about/
 
 
 
-### Daheen Dana Lee
+&nbsp;
 
-iOS developer
+## Daheen Dana Lee 
+
+**iOS developer who loves making something fun** 🤪
+
+[*LinkdeIn*](https://www.linkedin.com/in/lee-daheen-622bb1189/) [*GitHub*](https://github.com/daheenallwhite)
 
 &nbsp;
 
 :mortar_board:
 
-Sookmyung Women's University 
+Sookmyung Women's University (2012-2018)
 
 Bachelor's degree, Economics, Computer Science
 
@@ -22,7 +26,7 @@ Bachelor's degree, Economics, Computer Science
 
 :computer:
 
-Swift, ABAP, Java 
+Swift, ABAP, Java
 
 &nbsp;
 
@@ -41,19 +45,6 @@ English : business level (speaking, reading, writing)
 
 &nbsp;
 
-:pencil2:
-
-정보처리기사
-
-컴퓨터활용능력 1급
-
-SAS Base Programmer
-
-&nbsp;
-
 :envelope_with_arrow:
 
 allwhite.dev@gmail.com
-
-[visit me on github](https://github.com/daheenallwhite)
-
