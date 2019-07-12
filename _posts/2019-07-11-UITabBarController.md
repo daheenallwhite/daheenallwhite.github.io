@@ -72,7 +72,7 @@ class UITabBar : UIView
 
 &nbsp;
 
-![container view controller diagram]({{site.url}}/assets/post-image/container-view-controller.png)
+![container view controller diagram]({{site.url}}/assets/post-image/UITabBarViewController.png)
 
 ### 🔍 tool bar & tab bar
 
