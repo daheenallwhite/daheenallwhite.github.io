@@ -3,7 +3,7 @@ layout: post
 title:  "[Swift] JSON parser 구현하기"
 date:  2019-06-26 17:48:59
 author: Dana Lee
-categories: Swift
+categories: [Swift, Codesquad]
 tags: [JSON, JSON parser]
 lastmod : 2019-06-26 20:13:59
 sitemap :
