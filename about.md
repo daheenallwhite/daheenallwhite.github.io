@@ -12,11 +12,11 @@ permalink: /about/
 
 **iOS developer who loves making something fun** 🤪
 
-[*LinkdeIn*](https://www.linkedin.com/in/lee-daheen-622bb1189/) [*GitHub*](https://github.com/daheenallwhite)
+[*LinkdeIn*](https://www.linkedin.com/in/lee-daheen-622bb1189/) / [*GitHub*](https://github.com/daheenallwhite)
 
 &nbsp;
 
-:mortar_board:
+## :mortar_board:
 
 Sookmyung Women's University (2012-2018)
 
@@ -24,13 +24,13 @@ Bachelor's degree, Economics, Computer Science
 
 &nbsp;
 
-:computer:
+## :computer:
 
-Swift, ABAP, Java
+Swift, ABAP, Java, SQL
 
 &nbsp;
 
-:airplane:
+## :airplane:
 
 Korean : native language
 
@@ -38,7 +38,13 @@ English : business level (speaking, reading, writing)
 
 &nbsp;
 
-:open_file_folder:
+## 🏃🏻‍♀️
+
+Community Manager of @ [XXIT](https://twitter.com/officialXXIT) - IT community for women
+
+&nbsp;
+
+## :open_file_folder:
 
 - AR mobile simulation game (Unity3D, C#, Vuforia, MySQL, PHP)
 - Big data based Delivery Data Visualization application (Java, jQuery, JDBC, R, Rserve, Hadoop, Hive)
