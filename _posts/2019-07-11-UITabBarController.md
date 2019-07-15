@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "[UIKit] UITabBarController - tab bar와 다른 view controller가 들어있는 conatainer"
+title:  "UITabBarController - tab bar와 다른 view controller가 들어있는 conatainer"
 date:  2019-07-11 18:33:59
 author: Dana Lee
 categories: iOS
 tags: [iOS, UIKit, View Controller, UITabBarController]
-lastmod : 2019-07-09 18:33:59
+lastmod : 2019-07-15 21:01:59
 sitemap :
   changefreq : weekly
   priority : 1.0
