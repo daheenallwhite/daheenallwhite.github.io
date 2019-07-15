@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "[UIKit] viewDidLoad() 메소드는 언제 호출될까?"
+title:  "UIViewController 의 viewDidLoad() 메소드는 언제 호출될까?"
 date:  2019-07-11 18:33:59
 author: Dana Lee
 categories: iOS
 tags: [iOS, UIKit, View Controller, viewDidLoad()]
-lastmod : 2019-07-09 18:33:59
+lastmod : 2019-07-15 21:01:59
 sitemap :
   changefreq : weekly
   priority : 1.0
