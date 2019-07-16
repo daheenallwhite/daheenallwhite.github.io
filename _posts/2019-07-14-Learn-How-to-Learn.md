@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "학습하는 방법 학습하기 : '함께 자라기-애자일로 가는 길' 리뷰 "
+title:  "[Book Review] 함께 자라기-애자일로 가는 길 : 학습하는 방법 학습하기"
 date:  2019-07-14 17:52:59
 author: Dana Lee
-categories: [Personal Log]
+categories: [Book Review]
 tags: [학습, 애자일]
-lastmod : 2019-07-14 18:33:59
+lastmod : 2019-07-16 18:40:59
 sitemap :
   changefreq : weekly
   priority : 1.0
