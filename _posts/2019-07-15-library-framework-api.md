@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Framework, Library, API"
+title:  "용어 정리 - Framework, Library, API"
 date:  2019-07-15 22:43:59
 author: Dana Lee
 categories: [Programming]
