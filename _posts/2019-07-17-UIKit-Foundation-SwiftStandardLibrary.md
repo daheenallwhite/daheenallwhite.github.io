@@ -30,13 +30,15 @@ import Swift
 
 `Foundation`  은 Swift Standard Library 에 대한 reference 를 가지고 있음. 따라서 Foundation import 하면 Swift import 할 필요 없음
 
+&nbsp;
+
 ### 언제 어떤걸 써야 할까?
 
-UIKit : user interface 포함한 app 개발할 때 - UITableViewController, UIAlertController 을 이용해야 할 때
+- UIKit : user interface 포함한 app 개발할 때 - UITableViewController, UIAlertController 을 이용해야 할 때
 
-Foundation : Strings, Dates를 사용해야 할 때, `NSObject`의 클래스 계층구조가 필요할 때
+- Foundation : Strings, Dates를 사용해야 할 때, `NSObject`의 클래스 계층구조가 필요할 때
 
-Swift Standard Library
+- Swift Standard Library
 
 > The Swift standard library implements the basic data types, algorithms, and protocols you use to write apps in Swift.
 
