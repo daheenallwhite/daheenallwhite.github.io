@@ -28,7 +28,7 @@
  * Themes
  */
 
-
+ @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
 /*
  * Body resets
  *
@@ -48,7 +48,7 @@ body {
 }
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "Nanum Gothic", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -401,7 +401,7 @@ tbody tr:nth-child(odd) th {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "PT Sans", "Nanum Gothic", Helvetica, Arial, sans-serif;
   color: #ccc;
   text-align: center;
 }
