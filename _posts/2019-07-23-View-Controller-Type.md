@@ -114,7 +114,15 @@ container view controller 가 정한 해당 view controller 의 root view 크기
 
 ![](https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/Art/VCPG-container-acting-as-root-view-controller_2-2_2x.png)
 
+&nbsp;
 
+## view - view controller 연결/설정하는 방법
+
+- Interface Builder : canvas 에 view controller object 추가 후, scene 선택 → Identity Inspector → Custom Class 에 view controller subclass 연결
+
+  이 때, 자동 완성되어야 클래스가 제대로 생성된 것임
+
+- code : `loadView()` method of view controller - view 계층을 프로그래밍으로 생성하고 view controller 의 root view 를 `view` property 에 할당해줌
 
 ---
 
