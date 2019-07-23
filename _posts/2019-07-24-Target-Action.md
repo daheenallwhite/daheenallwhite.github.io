@@ -138,7 +138,3 @@ control 이 직접 이벤트를 처리하지 않고, 처리할 target 과 처리
 
 - [Target-Action - Boostcourse iOS](https://www.edwith.org/boostcourse-ios/lecture/16854/)
 - [UIControl](https://developer.apple.com/documentation/uikit/uicontrol)
-
-### 
-
-## 
