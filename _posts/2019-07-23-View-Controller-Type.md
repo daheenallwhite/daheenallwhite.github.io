@@ -4,7 +4,7 @@ title:  "[iOS] View Controller의 두 가지 타입"
 date:  2019-07-23 23:09:59
 author: Dana Lee
 categories: iOS
-tags: [UIViewController, View Controller]
+tags: [UIViewController, View Controller, Container View Controller, Root View Controller]
 lastmod : 2019-07-23 23:09:59
 sitemap :
   changefreq : weekly
