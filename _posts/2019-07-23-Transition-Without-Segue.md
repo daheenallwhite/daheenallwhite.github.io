@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[iOS] Segue 없이 view controller 간 전환하기"
+title:  "[iOS] Segue 없이 코드로 view controller 간 전환하기"
 date:  2019-07-23 23:02:59
 author: Dana Lee
 categories: iOS
