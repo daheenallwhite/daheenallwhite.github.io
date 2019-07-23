@@ -30,7 +30,7 @@ control 이 직접 이벤트를 처리하지 않고, 처리할 target 과 처리
 
 ## How it works
 
-![](https://github.com/daheenallwhite/swift-photoframe/blob/daheenallwhite/images/sender-target.jpeg)
+![](https://github.com/daheenallwhite/swift-photoframe/blob/daheenallwhite/images/sender-target.jpeg?raw=true)
 
 - `UIControl.Event` : control 이 감지하고 응답할 수 있는 event
 
@@ -84,7 +84,7 @@ control 이 직접 이벤트를 처리하지 않고, 처리할 target 과 처리
 
 - 구현 
 
-  ![](https://github.com/daheenallwhite/swift-photoframe/blob/daheenallwhite/images/button-simulation.gif)
+  ![](https://github.com/daheenallwhite/swift-photoframe/blob/daheenallwhite/images/button-simulation.gif?raw=true)
 
   - First : firstLabel background color - yellow 로 설정
   - Second: firstLabel text color - purple 로 설정
@@ -130,7 +130,7 @@ control 이 직접 이벤트를 처리하지 않고, 처리할 target 과 처리
 
   - *Example* : touchUpOutside event 발생시 버튼 색 gray 로 변경
 
-  ![](https://github.com/daheenallwhite/swift-photoframe/blob/daheenallwhite/images/touchUpOutside.gif) 
+  ![](https://github.com/daheenallwhite/swift-photoframe/blob/daheenallwhite/images/touchUpOutside.gif?raw=true) 
 
 ---
 
