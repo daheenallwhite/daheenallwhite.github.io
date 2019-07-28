@@ -40,14 +40,17 @@ English : business level (speaking, reading, writing)
 
 ## 🏃🏻‍♀️
 
-Community Manager of @ [XXIT](https://twitter.com/officialXXIT) - IT community for women
+Community Organizer of @ [XXIT](https://twitter.com/officialXXIT) - IT community for women
+
+XXIT is a community for women in IT industry for encouraging and supporting 
+
+​	twitter / instagram / youtube / facebook / daum cafe
 
 &nbsp;
 
 ## :open_file_folder:
 
 - AR mobile simulation game (Unity3D, C#, Vuforia, MySQL, PHP)
-- Big data based Delivery Data Visualization application (Java, jQuery, JDBC, R, Rserve, Hadoop, Hive)
 
 &nbsp;
 
