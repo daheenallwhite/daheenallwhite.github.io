@@ -8,7 +8,7 @@ permalink: /portfolio/
 
 > 내 손 안의 학교는 AR 육성 시뮬레이션 게임으로, 주인공 눈송이를 입학부터 졸업까지 수업 듣기(전공, 교양 등), 스펙 쌓기 등의 퀘스트를 통해 육성하는 게임입니다
 
-[안드로이드 다운로드](https://drive.google.com/file/d/14NRzxCzf0J_nB12_KM2Y3GC7UpI6zfTg/view?usp=sharing)
+[안드로이드 다운로드](https://drive.google.com/file/d/14NRzxCzf0J_nB12_KM2Y3GC7UpI6zfTg/view?usp=sharing) / [github repository](https://github.com/daheenallwhite/ARSimulationGame_SnowFlake)
 
 ![](https://github.com/daheenallwhite/ARSimulationGame_SnowFlake/blob/master/images/poster.png?raw=true)
 
