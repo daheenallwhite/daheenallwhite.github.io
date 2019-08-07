@@ -4,8 +4,9 @@ title: Porfolio
 permalink: /portfolio/
 ---
 
-- [AR 육성 시뮬레이션 게임 (Android) - Unity, C#, MySQL](https://github.com/daheenallwhite/ARSimulationGame_SnowFlake)
-- [Weather App (iOS) - Swift, OpenWeatherMap API](https://github.com/daheenallwhite/WeatherApp) 
+- #### [AR 육성 시뮬레이션 게임 (Android) - Unity, C#, MySQL](https://github.com/daheenallwhite/ARSimulationGame_SnowFlake)
+
+- #### [Weather App (iOS) - Swift, OpenWeatherMap API](https://github.com/daheenallwhite/WeatherApp) 
 
 &nbsp;
 
