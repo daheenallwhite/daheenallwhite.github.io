@@ -19,15 +19,11 @@ permalink: /portfolio/
 
 [안드로이드 다운로드](https://drive.google.com/file/d/14NRzxCzf0J_nB12_KM2Y3GC7UpI6zfTg/view?usp=sharing) / [github repository](https://github.com/daheenallwhite/ARSimulationGame_SnowFlake)
 
-<p float="left">
-  <img src="https://github.com/daheenallwhite/ARSimulationGame_SnowFlake/blob/master/images/start.gif?raw=true" width="200" />
-  <img src="https://github.com/daheenallwhite/ARSimulationGame_SnowFlake/blob/master/images/monster.gif?raw=true" width="200" /> 
-</p>
+| ![](https://github.com/daheenallwhite/ARSimulationGame_SnowFlake/blob/master/images/start.gif?raw=true) | ![](https://github.com/daheenallwhite/ARSimulationGame_SnowFlake/blob/master/images/monster.gif?raw=true) |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![](https://github.com/daheenallwhite/ARSimulationGame_SnowFlake/blob/master/images/classroom.gif?raw=true) | ![](https://github.com/daheenallwhite/ARSimulationGame_SnowFlake/blob/master/images/toeic-monster.gif?raw=true) |
 
-<p float="left">
-  <img src="https://github.com/daheenallwhite/ARSimulationGame_SnowFlake/blob/master/images/classroom.gif?raw=true" width="200" />
-  <img src="https://github.com/daheenallwhite/ARSimulationGame_SnowFlake/blob/master/images/toeic-monster.gif?raw=true" width="200" /> 
-</p>
+&nbsp;
 
 ![](https://github.com/daheenallwhite/ARSimulationGame_SnowFlake/blob/master/images/poster.png?raw=true)
 
@@ -59,11 +55,11 @@ C#, Unity, Vuforia, MySQL
 
 >  Open Weather Map api (5 days / 3 hour) 사용한 날씨 앱 구현 - iOS
 
-<p float="left">
-  <img src="https://github.com/daheenallwhite/WeatherApp/blob/master/images/display-1.gif?raw=true" width="100" />
-  <img src="https://github.com/daheenallwhite/WeatherApp/blob/master/images/display-2.gif?raw=true" width="100" /> 
-  <img src="https://github.com/daheenallwhite/WeatherApp/blob/master/images/display-3.gif?raw=true" width="100" />
-</p>
+|                                                              |                                                              |                                                              |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![](https://github.com/daheenallwhite/WeatherApp/blob/master/images/display-1.gif?raw=true" width="100) | ![](https://github.com/daheenallwhite/WeatherApp/blob/master/images/display-2.gif?raw=true) | ![](https://github.com/daheenallwhite/WeatherApp/blob/master/images/display-3.gif?raw=true) |
+
+&nbsp;
 
 
 
