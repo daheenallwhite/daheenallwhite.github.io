@@ -52,7 +52,7 @@ permalink: /about/
 
 - #### [AR mobile simulation game - Android (Unity3D, C#, Vuforia, MySQL, PHP)](https://github.com/daheenallwhite/ARSimulationGame_SnowFlake)
 
-- [WeatherApp - iOS (Swift, Open Weather Map API)](https://github.com/daheenallwhite/WeatherApp)
+- #### [WeatherApp - iOS (Swift, Open Weather Map API)](https://github.com/daheenallwhite/WeatherApp)
 
 &nbsp;
 
