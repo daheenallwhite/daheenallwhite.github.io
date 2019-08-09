@@ -49,7 +49,7 @@ delegate 는 `MKLocalSearchCompleterDelegate` protocol type 이다.
 
 ![](https://github.com/daheenallwhite/WeatherApp/raw/master/images/implementation-search.jpeg)
 
-
+&nbsp;
 
 ## 위치 검색 자동완성 구현하기
 
@@ -186,5 +186,6 @@ func updateSearchResults(for searchController: UISearchController)
 ### 📌 Reference
 
 - [Searching for Nearby Points of Interest](https://developer.apple.com/documentation/mapkit/searching_for_nearby_points_of_interest)
-- [MKLocalSearchCompleter]()
+- [MKLocalSearchCompleter](https://developer.apple.com/documentation/mapkit/mklocalsearchcompleter)
 - [UISearchController](https://developer.apple.com/documentation/uikit/uisearchcontroller)
+
