@@ -78,8 +78,8 @@ permalink: /about/
 
 *July 2016 - Jan 2017*
 
-- cast member in Magic Kingdom
-- communicate with various guests and gave them magical moments
+- Cast member in Magic Kingdom
+- Communicated with various guests and gave them magical moments
 
 &nbsp;
 
