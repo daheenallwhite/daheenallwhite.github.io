@@ -38,17 +38,52 @@ permalink: /about/
 
 &nbsp;
 
-## 🏃🏻‍♀️
+## 🏃🏻‍♀️ 
+
+#### Boostcourse Ace 2019
+
+*July 2019 ~*
+
+&nbsp;
 
 #### Community Organizer of @ [XXIT](https://twitter.com/officialXXIT) - IT community for women
 
-- XXIT is a community for women in IT industry to encourage and support them
+*Jun 2018 ~*
 
+- community for women in IT industry to encourage and support them
 - [twitter](https://twitter.com/officialXXIT) / [instagram](https://www.instagram.com/xxit.official/) / [youtube]( https://youtu.be/f9mGQEGHSkM) / facebook / [daum cafe](https://cafe.daum.net/xxit)
 
 &nbsp;
 
-## :open_file_folder:
+#### Mobile iOS course at CodeSquad
+
+*April 2019 ~*
+
+- [swift-jsonparser](https://github.com/daheenallwhite/swift-jsonparser)
+- [swift-cardgame](https://github.com/daheenallwhite/swift-cardgame)
+
+&nbsp;
+
+#### Software Engineer at LDCC
+
+*February 2018 - February 2019* 
+
+- Developed SAP CRM module in ABAP 
+- Managed realtime data including sales, customer information 
+- Developed customer level inquiry program based on sales data
+
+&nbsp;
+
+#### International College Program Intern at Walt Disney Wold
+
+*July 2016 - Jan 2017*
+
+- cast member in Magic Kingdom
+- communicate with various guests and gave them magical moments
+
+&nbsp;
+
+## :open_file_folder: [portfolio](https://daheenallwhite.github.io/portfolio/)
 
 - #### [AR mobile simulation game - Android (Unity3D, C#, Vuforia, MySQL, PHP)](https://github.com/daheenallwhite/ARSimulationGame_SnowFlake)
 
