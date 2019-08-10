@@ -51,7 +51,7 @@ permalink: /about/
 *Jun 2018 ~*
 
 - community for women in IT industry to encourage and support them
-- [twitter](https://twitter.com/officialXXIT) / [instagram](https://www.instagram.com/xxit.official/) / [youtube]( https://youtu.be/f9mGQEGHSkM) / facebook / [daum cafe](https://cafe.daum.net/xxit)
+- [twitter](https://twitter.com/officialXXIT) / [instagram](https://www.instagram.com/xxit.official/) / [youtube]( https://youtu.be/f9mGQEGHSkM) / [facebook](https://www.facebook.com/xxit.official/) / [daum cafe](https://cafe.daum.net/xxit)
 
 &nbsp;
 
