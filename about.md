@@ -12,7 +12,7 @@ permalink: /about/
 
 #### iOS developer who loves making something fun 🤪
 
-[*LinkdeIn*](https://www.linkedin.com/in/lee-daheen-622bb1189/) / [*GitHub*](https://github.com/daheenallwhite)
+[*LinkdeIn*](https://www.linkedin.com/in/daheen-dana-lee-622bb1189/) / [*GitHub*](https://github.com/daheenallwhite)
 
 &nbsp;
 
