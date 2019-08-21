@@ -65,5 +65,7 @@ sitemap :
 
 - 화면에는 항상 window & 최상위 root view 가 나옴
 
+  - window 의 `rootViewController` property : window 를 채우는 vc 를 가리킴
+
 - window 그 자체로는 시각적으로 보이지 않고, 대신에 다른 view 들을 보여주는 역할을 한다. 
 
