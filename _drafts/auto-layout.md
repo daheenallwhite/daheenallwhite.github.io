@@ -24,12 +24,13 @@ Constraint 에는 priority 가 있음 - 용도는 conflict 가 생길 때, 어�
   - 1000 : required
   - 그 외 : optional
 - `UILayoutPriority`
+- 최악의 조건을 가장 높은 우선순위로, 최선을 가장 낮은 우선순위로 
 
 
 
 ### Intrinsic Content Size
 
-일부 view 는 content 사이즈로 자신의 사이즈를 결정하기도 한다. 이 사이즈를 intrinsic content size 라고 함
+일부 view 는 **content 사이즈로 자신의 사이즈를 결정**하기도 한다. 이 사이즈를 intrinsic content size 라고 함
 
 - 빈 image view 는 intrinsic content size 가 없음
 - text view 의 intrinsic content size
@@ -50,4 +51,8 @@ Constraint 에는 priority 가 있음 - 용도는 conflict 가 생길 때, 어�
 
     var testData = [Location(coordinate: Coordinate(lat: "37.5665", lon: "126.978"), name: "Seoul"), Location(coordinate: Coordinate(lat: "43.000351", lon: "-75.499901"), name: "New York"), Location(coordinate: Coordinate(lat: "15.3525", lon: "120.832703"), name: "San Francisco")]
 ```
+
+
+
+
 
