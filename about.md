@@ -40,15 +40,15 @@ permalink: /about/
 
 ## 🏃🏻‍♀️ 
 
-#### Boostcourse Ace 2019
+#### iOS developer (Intern) - [Kakaopay](https://www.kakaopay.com/)
 
-*July 2019 ~*
+*September 2019 ~*
 
 &nbsp;
 
 #### Community Organizer of @ [XXIT](https://twitter.com/officialXXIT) - IT community for women
 
-*Jun 2018 ~*
+*June 2018 ~*
 
 - community for women in IT industry to encourage and support them
 - [twitter](https://twitter.com/officialXXIT) / [instagram](https://www.instagram.com/xxit.official/) / [youtube]( https://youtu.be/f9mGQEGHSkM) / [facebook](https://www.facebook.com/xxit.official/) / [daum cafe](https://cafe.daum.net/xxit)
@@ -57,7 +57,7 @@ permalink: /about/
 
 #### Mobile iOS course at CodeSquad
 
-*April 2019 ~*
+*April 2019 ~ August 2019* 
 
 - [swift-jsonparser](https://github.com/daheenallwhite/swift-jsonparser)
 - [swift-cardgame](https://github.com/daheenallwhite/swift-cardgame)
@@ -76,7 +76,7 @@ permalink: /about/
 
 #### International College Program Intern at Walt Disney Wold
 
-*July 2016 - Jan 2017*
+*July 2016 - January 2017*
 
 - Cast member in Magic Kingdom
 - Communicated with various guests and gave them magical moments
