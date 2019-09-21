@@ -16,27 +16,11 @@ permalink: /about/
 
 &nbsp;
 
-## :mortar_board:
-
-#### Sookmyung Women's University (2012-2018)
-
-##### Bachelor's degree, Economics, Computer Science
-
-&nbsp;
-
-## :computer:
+#### 💻
 
 #### Swift, ABAP, Java, SQL
 
-&nbsp;
 
-## :airplane:
-
-#### Korean : native language
-
-#### English : business level (speaking, reading, writing)
-
-&nbsp;
 
 ## 🏃🏻‍♀️ 
 
@@ -51,7 +35,7 @@ permalink: /about/
 *June 2018 ~*
 
 - community for women in IT industry to encourage and support them
-- [official website](https://xxit.world/)
+- [Official Website 🔗](https://xxit.world/)
 
 &nbsp;
 
@@ -83,7 +67,7 @@ permalink: /about/
 
 &nbsp;
 
-## :open_file_folder: [portfolio](https://daheenallwhite.github.io/portfolio/)
+#### 📂 [portfolio](https://daheenallwhite.github.io/portfolio/)
 
 - #### [AR mobile simulation game - Android (Unity3D, C#, Vuforia, MySQL, PHP)](https://github.com/daheenallwhite/ARSimulationGame_SnowFlake)
 
@@ -91,6 +75,22 @@ permalink: /about/
 
 &nbsp;
 
-:envelope_with_arrow:
+## :mortar_board:
 
-allwhite.dev@gmail.com
+#### Sookmyung Women's University (2012-2018)
+
+##### Bachelor's degree, Economics, Computer Science
+
+&nbsp;
+
+## 🧒
+
+#### Korean : native language
+
+#### English : business level (speaking, reading, writing)
+
+&nbsp;
+
+#### :envelope_with_arrow:
+
+[allwhite.dev@gmail.com](mailto:allwhite.dev@gmail.com)
