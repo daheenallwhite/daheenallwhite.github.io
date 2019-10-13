@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[iOS] Notification Center - 관찰해서 알려주는 역할"
+title:  "[iOS] NotificationCenter - 관찰해서 알려주는 역할"
 date:  2019-10-13 18:12:59
 author: Dana Lee
 categories: [iOS]
@@ -13,7 +13,7 @@ sitemap :
 
 # NotificationCenter
 
-> 미리 등록된 observer 들에게 notification 을 전달하는 역할의 클래스
+> 미리 등록된 observer 들에게 notification 을 전달하는 역할의 클래스 (NSNotificationCenter)
 
 `NotificationCenter` 클래스는 Observer pattern 에서 observer 를 등록하고, notification 을 주는 역할만 빼서 추상화 레벨을 올린 구현체이다. 기존의 Observer pattern 에서는 Subject 가 observer list를 관리하고, 알림을 줄 일이 발생하면 직접 notification을 dispatch 했다면, 이제는 notification dispatch 도 외주를 맡기는 셈이다.
 
@@ -116,6 +116,13 @@ observer pattern 개념을 구현한 `NotificationCenter` 이므로, observer �
           rootVC.present(alert, animated: true, completion: nil)
   }
   ```
+
+- 스크린샷 찍으면 alert 가 나오게 된다
+  ![]({{site.url}}/assets/post-image/notification-center-2.PNG)
+
+- 해당 AppDelegate.swift 
+
+  <script src="https://gist.github.com/daheenallwhite/a063f2956a9807ce1d83cce4a790fc77.js"></script>
 
 &nbsp;
 
