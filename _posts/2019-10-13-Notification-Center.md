@@ -96,7 +96,7 @@ observer pattern 개념을 구현한 `NotificationCenter` 이므로, observer �
   // AppDelegate.swift 
   // inside of didFinishLaunchingWithOption method
   
-  Notification.default.addObserver(forName: UIApplication.userDidTakeScreenshotNotification, object: nil, queue: nil,  using: applicationUserDidTakeScreenshot)
+  NotificationCenter.default.addObserver(forName: UIApplication.userDidTakeScreenshotNotification, object: nil, queue: nil,  using: applicationUserDidTakeScreenshot)
   ```
 
 - notification 이 오면 실행 될 method 를 구현한다
@@ -104,13 +104,16 @@ observer pattern 개념을 구현한 `NotificationCenter` 이므로, observer �
   root view controller 위에 alert를 띄워보자
 
   ```swift
-  func applicationUserDidTakeScreenShot() {
-    let rootVC = UIApplication.shared.windows.first { $0.isKeyWindow }
-    let alert UIAlertController(title: "스크린샷 감지", message: "스크린샷이 감지되었습니다.", preferredStyle: .alert)
-    alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in 
-  NSLog("The \"OK\" alert occured.")
-  }))
-    rootVC.present(alert, animated: true, completion: nil)
+  func applicationUserDidTakeScreenshot() {
+    guard let keywindow = UIApplication.shared.windows.first(where: { $0.isKeyWindow }),
+              let rootVC = keywindow.rootViewController else {
+              return
+          }
+          let alert = UIAlertController(title: "스크린샷 감지", message: "스크린샷이 감지되었습니다.", preferredStyle: .alert)
+          alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+              NSLog("The \"OK\" alert occured.")
+          }))
+          rootVC.present(alert, animated: true, completion: nil)
   }
   ```
 
