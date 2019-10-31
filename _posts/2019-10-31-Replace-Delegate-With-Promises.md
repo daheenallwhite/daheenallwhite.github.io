@@ -47,7 +47,7 @@ Delegate 패턴의 핵심은 내가 지금 하고 있는 일을 관심있어하�
 
 &nbsp;
 
-## Deleate -> Promises로 전환하기
+## Delegate -> Promises로 전환하기
 
 나는 날씨앱 클론 프로젝트에서 ViewController 의 생명주기에 Promise 를 적용해보기로 했다.
 
