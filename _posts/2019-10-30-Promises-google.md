@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[iOS] Google Promises - delegate, completion handler 보다 간단하게"
-date:  2019-10-13 20:19:59
+date:  2019-10-30 20:19:59
 author: Dana Lee
 categories: [iOS]
 tags: [google promises, promises, 비동기]
