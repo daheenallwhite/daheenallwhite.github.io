@@ -17,6 +17,10 @@ sitemap :
 
 Swift 에서 비동기 처리를 Promise 라는 객체로 묶어서 그 상태 값이 결정되면(resolved) 다음 동작을 할 수 있게끔 구현한 구조이다. 
 
+결정된 상태라는 뜻은 비동기 처리의 completion을 의미한다.
+
+&nbsp;
+
 ### Swift 에서의 비동기 처리
 
 Swift에서는 비동기 처리를 주로 completion handler 와 delegate 를 사용해서 처리한다. 작업을 맡긴 후, 완료가 되면 completion handler가 호출되거나, 해당 event를 delegate 에 알려서 delegate 가 그에 맞는 추가 처리를 하도록 한다.
@@ -41,7 +45,7 @@ if success {
 
 Delegate 패턴의 핵심은 내가 지금 하고 있는 일을 관심있어하는 delegate 에게 알려주는 것이다. 그럼 그에 맞는 처리는 delegate 에서 한다.
 
-&nbps;
+&nbsp;
 
 ## Deleate -> Promises로 전환하기
 
