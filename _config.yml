@@ -44,3 +44,5 @@ future: true
 # disqus 
 disqus:
   shorname: daheenallwhite.github.io
+
+plugins: [jekyll-paginate]
