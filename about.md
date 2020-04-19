@@ -24,9 +24,13 @@ permalink: /about/
 
 ## 🏃🏻‍♀️ 
 
+#### iOS developer at [Kakaopay](https://www.kakaopay.com/)
+
+*December 2019 ~*
+
 #### iOS developer (Intern) at [Kakaopay](https://www.kakaopay.com/)
 
-*September 2019 ~*
+*September 2019 ~ November 2019*
 
 &nbsp;
 
