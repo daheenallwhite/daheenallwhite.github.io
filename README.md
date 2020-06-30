@@ -1,6 +1,6 @@
-# Daheen's Journey to iOS developer :airplane:
+# ALL WHITE CHEAT SHEET 👀
 
-This blog is for archiving what I learn every day. The posts are usally about iOS including Swift, HIG, Xcode, and often programming generals such as Design Pattern, Algorithm, and so on.
+This blog is for archiving what I learn every day on iOS including Swift, HIG, Xcode, and often programming generals such as Design Pattern, Algorithm, and so on.
 
 #### Theme -  [Lanyon](https://github.com/poole/lanyon)
 
