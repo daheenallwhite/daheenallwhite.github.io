@@ -48,7 +48,7 @@ body {
 }
 
 html {
-  font-family: "Helvetica Neue", "Nanum Gothic", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans KR", "Helvetica Neue", "Nanum Gothic", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -362,6 +362,7 @@ tbody tr:nth-child(odd) th {
 
 .entry-date {
   color: #9a9a9a;
+  font-weight: 400;
 }
 
 /* Related posts */
@@ -401,7 +402,7 @@ tbody tr:nth-child(odd) th {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: "PT Sans", "Nanum Gothic", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans KR", "PT Sans", "Nanum Gothic", Helvetica, Arial, sans-serif;
   color: #ccc;
   text-align: center;
 }
