@@ -1,17 +1,17 @@
 ---
 layout: post
-title:  "[인터뷰 후기] 사전과제로 75:1 경쟁률 뚫는 법"
+title:  "[인터뷰 후기] 사전과제로 75:1 경쟁률 뚫기"
 date:  2020-07-16 01:35:59
 author: Dana Lee
 categories: [iOS, Interview]
 tags: [iOS 인터뷰, 인터뷰 팁, 사전과제]
-lastmod : 2020-07-16 01:35:59
+lastmod : 2020-07-29 20:35:59
 sitemap :
   changefreq : weekly
   priority : 1.5
 ---
 
-# 사전과제로 75:1 경쟁률 뚫는 법
+# 사전과제로 75:1 경쟁률 뚫기
 
 
 
