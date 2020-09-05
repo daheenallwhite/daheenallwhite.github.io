@@ -18,7 +18,7 @@ permalink: /about/
 
 #### 💻
 
-#### Swift, ABAP, Java, SQL
+#### Swift, iOS
 
 &nbsp;
 
