@@ -13,10 +13,11 @@
 
   <!--open graph-->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="all white cheat sheet-Dana's Swifty Log">
-  <meta property="og:description" content="Swift, iOS, programming, tech, 앱 개발">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:image" content="http://daheenallwhite.github.io/assets/logo.png">
-  <meta property="og:url" content="http://daheenallwhite.github.io">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:site_name" content="{{ site.title }}">
   
   <!-- CSS -->
   <link rel="stylesheet" href="{{ site.baseurl }}/public/css/poole.css">
