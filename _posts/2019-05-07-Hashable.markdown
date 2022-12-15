@@ -56,7 +56,7 @@ struct Set<Element> where Element : Hashable
 - method
 
   - `contains`
-  - `==` , `!==` (Equotable 에서 구현된 method)
+  - `==` , `!==` (Equatable 에서 구현된 method)
   - 집합 연산 : union, disjoint, subset… 등등
 
 - Set 을 사용하기 위한 기본 조건 : Set 의 element가 되는 type이 `Hashable` protocol을 준수해야 한다.
