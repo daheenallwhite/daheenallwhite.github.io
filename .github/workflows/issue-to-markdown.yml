@@ -11,11 +11,11 @@ jobs:
       - uses: actions/checkout@v3
         with:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-          dest: '_post'
-          slug_as_folder_name: true
       - uses: eunjae-lee/issue-to-markdown@v0
         with:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          dest: '_post'
+          slug_as_folder_name: true
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: 'docs: update contents'
