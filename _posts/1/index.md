@@ -1,20 +1,15 @@
 ---
+slug: ""
+layout: "post"
 title: "Test posting for issue to markdown github action"
+date: 2023-02-23 18:25:00
+author: "Dana Lee"
+categories: "Swift"
+tags: "Github"
+lastmod: 2023-02-23 18:25:00
+sitemap: "[object Object]"
 ---
 
-slug: test
----
-layout: post
-title: "Test Workflows"
-date: 2023-02-23 18:25:00
-author: Dana Lee
-categories: Swift
-tags: Github
-lastmod : 2023-02-23 18:25:00
-sitemap :
-  changefreq : weekly
-  priority : 1.0
----
 
 # Extension
 
