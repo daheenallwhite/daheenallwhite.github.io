@@ -22,7 +22,7 @@ I am thrilled to share my experience and knowledge through this blog.
 Plus, I am also highly interested in other development including iPad, WatchOS, and automation. 
 &nbsp;
 
-If you share the same passion for iOS development or any other exciting opportunities in the tech industry, feel free to reach out to me. I'm always open to exploring new challenges and collaborations!
+If you would like to share the same passion for iOS development or any other exciting opportunities in the tech industry, feel free to reach out to me. I'm always open to exploring new challenges and collaborations!
 &nbsp;
 
 #### ✉️
