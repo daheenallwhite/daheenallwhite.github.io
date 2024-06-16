@@ -19,7 +19,7 @@ excerpt: "This is a post explaining which one to use among two confusing operato
 🔑 `subscribe(on:)` : to set where the observable does its work.
 
 &nbsp;
-![]({{site.url}}/assets/post-image/Rx_thread_1.PNG)
+![]({{site.url}}/assets/post-image/Rx_thread_1.png)
 
 One of the confusing operations when using RxSwift is determining whether to use `observe(on:)` or `subscribe(on:)`. It is not difficult to decide, but it is something easy to get confused about, and I often forget and have to look it up most of the time.
 
@@ -81,7 +81,7 @@ Observable<String>.create { observer in
     })
 
 ```
-![]({{site.url}}/assets/post-image/Rx_thread_2.PNG)
+![]({{site.url}}/assets/post-image/Rx_thread_2.png)
 
 - The Observable is created and works on the background queue because `subscribe(on:)` specifies the ConcurrentDispatchQueueScheduler. (the orange color part)
 - The observer handles the events on the main thread because `observe(on:)` specifies the MainScheduler. (the blue color part)
