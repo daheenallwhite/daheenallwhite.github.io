@@ -12,7 +12,7 @@ permalink: /about/
 
 #### An iOS developer with an intense passion for solving problems 😎
 
-[*LinkedIn*](https://www.linkedin.com/in/daheen-dana-lee-622bb1189/) / [*GitHub*](https://github.com/daheenallwhite)
+[*LinkedIn*](https://www.linkedin.com/in/daheen-lee-dev/) / [*GitHub*](https://github.com/daheenallwhite)
 &nbsp;
 
 Hello and welcome to my blog.🙋🏻‍♀️
