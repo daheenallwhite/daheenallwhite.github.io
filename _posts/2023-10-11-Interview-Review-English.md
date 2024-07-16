@@ -5,7 +5,7 @@ date: 2023-11-11 11:22:59
 author: Dana Lee
 categories: [iOS, Interview]
 tags: [Software developer Interview Experience, iOS developer interview tips, Software Developer Assignment Tips]
-lastmod : 2023-11-11 11:22:59
+lastmod : 2024-07-17 00:55:30
 language: en
 sitemap :
   changefreq : weekly
@@ -13,7 +13,7 @@ sitemap :
 excerpt: "This post details my experience and strategies in overcoming a 75:1 competition ratio during a pre-assignment phase for an iOS developer job."
 ---
 
-> This post was originally written in Korean and has been translated into English due to the positive feedback I received. You can find the original post [here](https://daheenallwhite.github.io/ios/interview/2020/07/16/Interview-Review/) and the repository [here](https://github.com/daheenallwhite/WeatherApp).
+> This post was originally written in Korean in 2019 and was translated into English in response to the positive feedback I have received since posting it. You can find the original post [here](https://daheenallwhite.github.io/ios/interview/2020/07/16/Interview-Review/) and the repository [here](https://github.com/daheenallwhite/WeatherApp).
 
 &nbsp;
 
