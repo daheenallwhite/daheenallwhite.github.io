@@ -52,11 +52,7 @@ var body: some View {
           Spacer()
           Button("Send Code") {
             // Add button action
-          }.padding(.vertical, 16)
-            .padding(.horizontal, 90)
-          .background(.pink)
-          .foregroundColor(.white)
-            .cornerRadius(25)
+          }
         }
       }.padding(.all)
       .onTapGesture {
