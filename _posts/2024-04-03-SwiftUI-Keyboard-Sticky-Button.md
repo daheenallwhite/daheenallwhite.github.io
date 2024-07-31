@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[SwiftUI] Creating a Sticky Floating Button with Just One Spacer"
-date: 2023-11-11 11:22:59
+date: 2024-04-03 00:55:30
 author: Dana Lee
 categories: [iOS, SwiftUI]
 tags: [SwiftUI, Button on keyboard, StickyButton on keyboard, Floating button on keboard]
