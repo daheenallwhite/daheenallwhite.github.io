@@ -55,10 +55,6 @@ var body: some View {
           }
         }
       }.padding(.all)
-      .onTapGesture {
-        print("Tapped background")
-        simpleFocus = false
-      }
     }
 
 ```
