@@ -5,36 +5,94 @@
     padding: 20px;
 }
 
-/* Introduction Section */
+/* General Styling for Introduction Section */
 .introduction-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 40px;
+    justify-content: center;
     text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.introduction-section .profile-image img {
-    max-width: 150px;
-    border-radius: 50%;
+.intro-text {
+    flex: 1;
 }
 
-.introduction-section .self-intro {
-    margin-top: 20px;
+.intro-text h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
-@media(min-width: 768px) {
+.intro-text p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.profile-image img {
+    max-width: 200px; /* Ideal size for desktop */
+}
+
+.index-social-icons a {
+    font-size: 2rem;
+    margin-right: 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.index-social-icons a:hover {
+    color: #007BFF;
+}
+
+/* Mobile-specific adjustments */
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
     .introduction-section {
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: left;
+        flex-direction: column;
+        text-align: center;
     }
-    .introduction-section .self-intro {
-        max-width: 60%;
-        margin: 0;
+
+    .profile-image img {
+        max-width: 150px; /* Reduce the image size for mobile */
+        margin-bottom: 20px;
     }
-    .introduction-section .profile-image {
-        max-width: 35%;
+
+    .intro-text h1 {
+        font-size: 2rem; /* Smaller heading on mobile */
+    }
+
+    .intro-text p {
+        font-size: 1rem;
+    }
+
+    .social-icons a {
+        font-size: 1.5rem;
+    }
+}
+
+/* Desktop-specific adjustments for side-by-side layout */
+@media (min-width: 768px) {
+    .introduction-section {
+        flex-direction: row; /* Ensure side by side layout */
+        justify-content: space-between; /* Add space between text and image */
+        align-items: center; /* Vertically align items */
+        text-align: left; /* Ensure text is aligned to the left */
+    }
+
+    .intro-text {
+        flex: 1;
+        padding-right: 20px; /* Add some space between the text and image */
+    }
+
+    .profile-image {
+        flex: 0 0 200px; /* Set a fixed width for the profile image */
+    }
+
+    .profile-image img {
+        max-width: 100%;
+        border-radius: 10px;
     }
 }
 
@@ -47,7 +105,9 @@
 .featured-content {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    width: 100%; /* Make sure the container takes up full width */
 }
 
 .featured-content img {
@@ -67,14 +127,45 @@
 
     .featured-content {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: flex-start;
         text-align: left;
-    }
-    .featured-content .post-description {
-        margin-left: 40px;
+        width: 100%; /* Make sure the container takes up full width */
     }
 }
+
+.post-image {
+    flex: 0 0 40%; /* Ensure the image takes 40% of the width */
+    max-width: 100%;
+}
+
+.post-image img {
+    width: 50%; /* Reduce the image width to 80% of the container */
+    height: auto; /* Maintain the aspect ratio automatically */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .featured-content {
+        flex-direction: column; /* Stack the image and text vertically */
+        align-items: center; /* Center both image and text */
+        justify-content: center;
+    }
+
+    .post-image img {
+        width: 80%; /* Adjust the image size for mobile */
+        max-width: 300px; /* Limit the maximum width */
+        margin: 0 auto 10px auto; /* Center the image with auto margins */
+        display: block; /* Ensure the image behaves as a block element */
+    }
+
+    .post-description {
+        text-align: center; /* Center the text under the image */
+        padding-left: 0; /* Remove padding that may cause alignment issues */
+    }
+}
+
 
 /* Blog Post Link Section */
 .blog-link-section {
