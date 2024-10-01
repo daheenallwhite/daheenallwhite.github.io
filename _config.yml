@@ -11,9 +11,9 @@ gems:
 permalink:           pretty
 
 # Setup
-title:               all white cheat sheet
-tagline:             ' Dana&rsquo;s Swifty Life'
-description:         'Dana Daheen Lee<br>#iOS #Swift #CleanCode #Programming'
+title:               Daheen Lee
+tagline:             '  all white cheat sheet'
+description:         'Daheen Lee<br>#iOS #Swift #CleanCode #Programming'
 url:                 http://daheenallwhite.github.io
 baseurl:             ''
 paginate:            5
@@ -25,7 +25,7 @@ author:
   email:             allwhite.dev@gmail.com
 
 # Custom vars
-version:             1.0.0
+version:             2.0.0
 
 # google analytics
 g-analytics: UA-140592254-1

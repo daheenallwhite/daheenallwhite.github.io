@@ -2,17 +2,38 @@
 layout: default
 title: Home
 ---
-<div id="home">
-    <img src="{{ site.url }}/assets/logo.png" title="Profile Picture" class="profile" style="max-width: 50%;">
-    <h1>Recent Posts</h1>
-    <ul class="posts" style="list-style-type: none;font-size: 1.1rem;padding-inline-start: 10px;">
-      {% for post in site.posts limit:10 %}
-         
-        <li style="margin-bottom: 0.5rem;"><a href="{{ post.url }}">{{ post.title }}</a><span class="entry-date"> &raquo; {{ post.date | date: "%B %d, %Y" }}</span></li>
-        
-      {% endfor %}
-    </ul>
-    <h3>&nbsp;&nbsp;<a href="{{ post.url }}/posts/">Wanna Read More?&nbsp;<i class="fas fa-plus"></i></a></h3>
+
+<div id="home" class="container">
+    <!-- Introduction Section -->
+    <section id="introduction" class="introduction-section">
+        <div class="self-intro">
+            <h2>Hiya, I am Daheen</h2>
+            <p>Versatile iOS Engineer who successfully grew an app from scratch to over 80,000 users.</p>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="profile-image">
+            <img src="{{ site.url }}/assets/logo.png" alt="Profile Picture" class="profile">
+        </div>
+    </section>
+
+    <!-- Featured Posts/Projects Section -->
+    <section id="featured-posts" class="featured-section">
+        <h2>Featured Posts/Projects</h2>
+        <div class="featured-content">
+            <div class="post-image">
+                <img src="{{ site.url }}/assets/featured.png" alt="Featured Image">
+            </div>
+            <div class="post-description">
+                <p>This is a short explanation of the featured post or project. You can link to the project <a href="#">here</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Link to Blog Posts Section -->
+    <section id="blog-posts" class="blog-link-section">
+        <a href="{{ site.url }}/posts/" class="blog-link-btn">View All Blog Posts</a>
+    </section>
 </div>
 
 
