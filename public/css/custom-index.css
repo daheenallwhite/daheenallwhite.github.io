@@ -87,82 +87,11 @@
     }
 
     .profile-image {
-        flex: 0 0 200px; /* Set a fixed width for the profile image */
+        flex: 0 0 250px; /* Set a fixed width for the profile image */
     }
 
     .profile-image img {
         max-width: 100%;
-        border-radius: 10px;
-    }
-}
-
-/* Featured Section */
-.featured-section {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.featured-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%; /* Make sure the container takes up full width */
-}
-
-.featured-content img {
-    max-width: 300px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-.featured-content .post-description {
-    max-width: 500px;
-}
-
-@media(min-width: 768px) {
-    .featured-section {
-        text-align: left; /* Keep the text left-aligned on larger screens */
-    }
-
-    .featured-content {
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-        text-align: left;
-        width: 100%; /* Make sure the container takes up full width */
-    }
-}
-
-.post-image {
-    flex: 0 0 40%; /* Ensure the image takes 40% of the width */
-    max-width: 100%;
-}
-
-.post-image img {
-    width: 50%; /* Reduce the image width to 80% of the container */
-    height: auto; /* Maintain the aspect ratio automatically */
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-@media (max-width: 768px) {
-    .featured-content {
-        flex-direction: column; /* Stack the image and text vertically */
-        align-items: center; /* Center both image and text */
-        justify-content: center;
-    }
-
-    .post-image img {
-        width: 80%; /* Adjust the image size for mobile */
-        max-width: 300px; /* Limit the maximum width */
-        margin: 0 auto 10px auto; /* Center the image with auto margins */
-        display: block; /* Ensure the image behaves as a block element */
-    }
-
-    .post-description {
-        text-align: center; /* Center the text under the image */
-        padding-left: 0; /* Remove padding that may cause alignment issues */
     }
 }
 
@@ -183,4 +112,100 @@
 
 .blog-link-btn:hover {
     background-color: #0056b3;
+}
+
+/* Featured Section */
+.featured-section {
+    margin-top: 50px;
+}
+
+.featured-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Featured Content - Flexbox for layout */
+.featured-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 30px;
+    align-items: flex-start;
+}
+
+/* Post Image Styling */
+.post-image {
+    flex: 0 0 250px; /* Adjust the width of the image */
+}
+
+.post-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Post Description Styling */
+.post-description {
+    flex: 1; /* Take up the remaining space */
+    display: flex;
+    flex-direction: column;
+}
+
+.post-description h2 {
+    font-size: 1.1rem;
+    margin: 0 0 10px;
+    font-weight: bold;
+}
+
+.post-description p {
+    font-size: 0.9rem;
+    margin: 0 0 20px;
+    color: #555;
+}
+
+.post-details {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.post-details span::after {
+    content: "•";
+    margin-left: 5px;
+}
+
+.post-details span:last-child::after {
+    content: ""; /* Remove the bullet after the last item */
+}
+
+/* Badge Styling */
+.badge {
+    display: inline-block; /* Make sure the badge only takes up as much space as the text */
+    background-color: #007BFF; /* Adjust the background color as needed */
+    color: white;
+    padding: 5px 10px; /* Adjust padding to control the space inside the badge */
+    border-radius: 20px; /* Rounded corners */
+    font-size: 0.7rem; /* Adjust font size */
+    margin-bottom: 10px;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent the text from wrapping */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .featured-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .post-image {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+
+    .post-description {
+        text-align: center;
+    }
 }
